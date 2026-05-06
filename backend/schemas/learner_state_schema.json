@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schema_name": "learner_state_schema",
+  "schema_version": "v1.0",
+  "title": "Learner State Schema",
+  "description": "Schema for tracking learner state across simulated multi-turn algebra tutoring episodes in the learner-state-aware pedagogical RAG condition.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "state_id",
+    "session_id",
+    "task_id",
+    "turn_number",
+    "problem_id",
+    "topic",
+    "subskill",
+    "recent_answer_attempt",
+    "detected_error_type",
+    "hint_count",
+    "support_level",
+    "interaction_summary",
+    "last_pedagogical_mode",
+    "state_created_at",
+    "state_updated_at"
+  ],
+  "properties": {
+    "state_id": {
+      "type": "string",
+      "description": "Unique identifier for this learner-state record."
+    },
+    "session_id": {
+      "type": "string",
+      "description": "Unique identifier for the simulated tutoring session."
+    },
+    "task_id": {
+      "type": "string",
+      "description": "Benchmark task identifier, such as SE-01 or LE-04."
+    },
+    "turn_number": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Current turn number within the tutoring episode."
+    },
+    "problem_id": {
+      "type": "string",
+      "description": "Identifier for the current algebra problem. Usually matches task_id for benchmark evaluation."
+    },
+    "topic": {
+      "type": "string",
+      "description": "Algebra topic for the current task."
+    },
+    "subskill": {
+      "type": "string",
+      "description": "Specific algebra subskill targeted by the task."
+    },
+    "recent_answer_attempt": {
+      "type": ["string", "null"],
+      "description": "Most recent learner answer, misconception statement, or follow-up message."
+    },
+    "detected_error_type": {
+      "type": ["string", "null"],
+      "description": "Detected misconception or error type, such as incomplete_distribution or combining_unlike_terms."
+    },
+    "hint_count": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of hints already provided in the current tutoring episode."
+    },
+    "support_level": {
+      "type": "string",
+      "enum": [
+        "none",
+        "conceptual_prompt",
+        "light_hint",
+        "procedural_hint",
+        "misconception_correction",
+        "worked_step_explanation",
+        "full_solution"
+      ],
+      "description": "Current level of instructional support."
+    },
+    "interaction_summary": {
+      "type": "string",
+      "description": "Compact rolling summary of the tutoring interaction so far."
+    },
+    "last_pedagogical_mode": {
+      "type": ["string", "null"],
+      "enum": [
+        null,
+        "conceptual_prompt",
+        "light_hint",
+        "procedural_hint",
+        "misconception_correction",
+        "worked_step_explanation",
+        "full_solution"
+      ],
+      "description": "Most recent pedagogical response mode selected by the policy engine."
+    },
+    "state_created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp when the state record was created."
+    },
+    "state_updated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp when the state record was last updated."
+    },
+    "versioning": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Version identifiers needed for reproducibility.",
+      "required": [
+        "task_bank_version",
+        "policy_version",
+        "learner_state_schema_version"
+      ],
+      "properties": {
+        "task_bank_version": {
+          "type": "string"
+        },
+        "policy_version": {
+          "type": "string"
+        },
+        "learner_state_schema_version": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
