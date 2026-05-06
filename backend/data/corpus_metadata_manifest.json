@@ -1,0 +1,124 @@
+{
+  "manifest_name": "Algebra Corpus Metadata Manifest",
+  "manifest_version": "v1.0",
+  "description": "Allowed metadata fields and values for instructional corpus chunks used by the learner-state-aware pedagogical RAG tutor.",
+  "related_task_bank_version": "v1.0",
+  "required_metadata_fields": [
+    "chunk_id",
+    "title",
+    "topic",
+    "subskill",
+    "difficulty",
+    "resource_type",
+    "misconception_tag",
+    "supports_tasks",
+    "pedagogical_use"
+  ],
+  "metadata_fields": {
+    "chunk_id": {
+      "type": "string",
+      "description": "Unique identifier for the instructional corpus chunk."
+    },
+    "title": {
+      "type": "string",
+      "description": "Human-readable title for the instructional chunk."
+    },
+    "topic": {
+      "type": "string",
+      "allowed_values": [
+        "simplifying expressions",
+        "solving linear equations",
+        "substitution",
+        "worked-solution error identification",
+        "symbolic relationship interpretation",
+        "short conceptual prompt"
+      ]
+    },
+    "subskill": {
+      "type": "string",
+      "allowed_values": [
+        "combining like terms",
+        "distributive property and combining like terms",
+        "distribution over subtraction",
+        "negative distribution",
+        "like and unlike terms",
+        "inverse operations",
+        "two-step equations",
+        "distribution in equations",
+        "variables on both sides",
+        "multiplication notation in algebra",
+        "order of operations with exponents",
+        "substitution with subtraction",
+        "substitution with parentheses",
+        "inverse operations and balance principle",
+        "distributive property",
+        "error analysis",
+        "meaning of variables and coefficients",
+        "equivalent expressions",
+        "expression structure",
+        "like terms reasoning"
+      ]
+    },
+    "difficulty": {
+      "type": "string",
+      "allowed_values": ["easy", "medium", "hard"]
+    },
+    "resource_type": {
+      "type": "string",
+      "allowed_values": [
+        "benchmark_task",
+        "conceptual_explanation",
+        "worked_example",
+        "misconception_note",
+        "strategy_note",
+        "guided_question"
+      ]
+    },
+    "misconception_tag": {
+      "type": ["string", "null"],
+      "allowed_values": [
+        null,
+        "incorrect_coefficient_addition",
+        "distribution_or_combining_error",
+        "distribution_over_subtraction_confusion",
+        "negative_distribution_sign_error",
+        "combining_unlike_terms",
+        "wrong_inverse_operation",
+        "incorrect_order_of_inverse_operations",
+        "failure_to_isolate_variable",
+        "incomplete_distribution",
+        "balance_principle_confusion",
+        "concatenation_instead_of_multiplication",
+        "order_of_operations_error",
+        "subtraction_sign_error",
+        "parentheses_or_partial_distribution_error",
+        "move_across_sign_error",
+        "multi_step_error_analysis",
+        "coefficient_meaning_confusion",
+        "equivalence_confusion",
+        "expression_structure_confusion"
+      ]
+    },
+    "supports_tasks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Benchmark task IDs supported by the chunk."
+    },
+    "pedagogical_use": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "conceptual_prompt",
+          "light_hint",
+          "procedural_hint",
+          "misconception_correction",
+          "worked_step_explanation",
+          "full_solution"
+        ]
+      }
+    }
+  }
+}

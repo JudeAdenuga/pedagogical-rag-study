@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schema_name": "expert_scoring_schema",
+  "schema_version": "v1.0",
+  "title": "Expert Scoring Schema",
+  "description": "Schema for expert scoring of baseline and pedagogical RAG tutor outputs.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "score_id",
+    "evaluator_id",
+    "condition",
+    "task_id",
+    "turn_number",
+    "solution_accuracy",
+    "conceptual_support",
+    "instructional_quality",
+    "misconception_handling",
+    "adaptive_scaffolding",
+    "hallucination_control",
+    "overall_helpfulness",
+    "created_at"
+  ],
+  "properties": {
+    "score_id": {
+      "type": "string"
+    },
+    "evaluator_id": {
+      "type": "string"
+    },
+    "condition": {
+      "type": "string",
+      "enum": ["baseline", "pedagogical_rag"]
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "turn_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "solution_accuracy": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "conceptual_support": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "instructional_quality": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "misconception_handling": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "adaptive_scaffolding": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "hallucination_control": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "overall_helpfulness": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "qualitative_notes": {
+      "type": ["string", "null"]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

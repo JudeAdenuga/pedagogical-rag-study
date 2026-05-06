@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schema_name": "tutor_request_schema",
+  "schema_version": "v1.0",
+  "title": "Tutor Request Schema",
+  "description": "Schema for a tutoring request sent to either the baseline tutor or the learner-state-aware pedagogical RAG tutor.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "request_id",
+    "condition",
+    "session_id",
+    "task_id",
+    "turn_number",
+    "current_learner_message",
+    "created_at"
+  ],
+  "properties": {
+    "request_id": {
+      "type": "string"
+    },
+    "condition": {
+      "type": "string",
+      "enum": ["baseline", "pedagogical_rag"]
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "turn_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "current_learner_message": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dry_run": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

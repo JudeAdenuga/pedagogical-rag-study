@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schema_name": "retrieval_log_schema",
+  "schema_version": "v1.0",
+  "title": "Retrieval Log Schema",
+  "description": "Schema for logging retrieval queries, filters, returned chunks, and retrieval quality evidence.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "retrieval_log_id",
+    "session_id",
+    "task_id",
+    "turn_number",
+    "query_text",
+    "retrieval_mode",
+    "top_k",
+    "metadata_filters",
+    "retrieved_chunks",
+    "created_at"
+  ],
+  "properties": {
+    "retrieval_log_id": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "turn_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "query_text": {
+      "type": "string"
+    },
+    "retrieval_mode": {
+      "type": "string",
+      "enum": ["mock", "keyword", "semantic", "hybrid", "bedrock_knowledge_base"]
+    },
+    "top_k": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "metadata_filters": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "retrieved_chunks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["chunk_id", "title", "score", "content"],
+        "properties": {
+          "chunk_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "score": {
+            "type": "number"
+          },
+          "content": {
+            "type": "string"
+          },
+          "metadata": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

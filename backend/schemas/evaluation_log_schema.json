@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schema_name": "evaluation_log_schema",
+  "schema_version": "v1.0",
+  "title": "Evaluation Log Schema",
+  "description": "Schema for complete evaluation logs used as reproducible research evidence.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evaluation_log_id",
+    "condition",
+    "session_id",
+    "task_id",
+    "turn_number",
+    "request",
+    "response",
+    "created_at"
+  ],
+  "properties": {
+    "evaluation_log_id": {
+      "type": "string"
+    },
+    "condition": {
+      "type": "string",
+      "enum": ["baseline", "pedagogical_rag"]
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "turn_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "request": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "response": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "learner_state_before": {
+      "type": ["object", "null"],
+      "additionalProperties": true
+    },
+    "learner_state_after": {
+      "type": ["object", "null"],
+      "additionalProperties": true
+    },
+    "policy_decision": {
+      "type": ["object", "null"],
+      "additionalProperties": true
+    },
+    "retrieval_log": {
+      "type": ["object", "null"],
+      "additionalProperties": true
+    },
+    "prompt_text": {
+      "type": ["string", "null"]
+    },
+    "model_id": {
+      "type": ["string", "null"]
+    },
+    "latency_ms": {
+      "type": ["integer", "null"],
+      "minimum": 0
+    },
+    "error": {
+      "type": ["object", "null"],
+      "additionalProperties": true
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

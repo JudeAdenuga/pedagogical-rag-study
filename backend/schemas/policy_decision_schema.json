@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schema_name": "policy_decision_schema",
+  "schema_version": "v1.0",
+  "title": "Policy Decision Schema",
+  "description": "Schema for logging pedagogical response-mode decisions made by the learner-state-aware policy engine.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "policy_decision_id",
+    "session_id",
+    "task_id",
+    "turn_number",
+    "selected_mode",
+    "reason_codes",
+    "input_state_summary",
+    "policy_version",
+    "created_at"
+  ],
+  "properties": {
+    "policy_decision_id": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "turn_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "selected_mode": {
+      "type": "string",
+      "enum": [
+        "conceptual_prompt",
+        "light_hint",
+        "procedural_hint",
+        "misconception_correction",
+        "worked_step_explanation",
+        "full_solution"
+      ]
+    },
+    "reason_codes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "input_state_summary": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "policy_version": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

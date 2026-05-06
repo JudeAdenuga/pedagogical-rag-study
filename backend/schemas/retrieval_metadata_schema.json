@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schema_name": "retrieval_metadata_schema",
+  "schema_version": "v1.0",
+  "title": "Retrieval Metadata Schema",
+  "description": "Schema for metadata attached to algebra instructional corpus chunks used during retrieval.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "chunk_id",
+    "title",
+    "topic",
+    "subskill",
+    "difficulty",
+    "resource_type",
+    "misconception_tag",
+    "supports_tasks",
+    "pedagogical_use",
+    "corpus_version"
+  ],
+  "properties": {
+    "chunk_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "subskill": {
+      "type": "string"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": ["easy", "medium", "hard"]
+    },
+    "resource_type": {
+      "type": "string",
+      "enum": [
+        "benchmark_task",
+        "conceptual_explanation",
+        "worked_example",
+        "misconception_note",
+        "strategy_note",
+        "guided_question"
+      ]
+    },
+    "misconception_tag": {
+      "type": ["string", "null"]
+    },
+    "supports_tasks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pedagogical_use": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "conceptual_prompt",
+          "light_hint",
+          "procedural_hint",
+          "misconception_correction",
+          "worked_step_explanation",
+          "full_solution"
+        ]
+      }
+    },
+    "corpus_version": {
+      "type": "string"
+    }
+  }
+}
