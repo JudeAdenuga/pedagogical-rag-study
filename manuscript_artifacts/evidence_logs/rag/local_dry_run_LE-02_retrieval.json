@@ -1,0 +1,134 @@
+{
+  "retrieval_log_id": "retrieval_2987e20dc9234d2e9981b211a7344990",
+  "session_id": "local_dry_run_LE-02",
+  "task_id": "LE-02",
+  "turn_number": 1,
+  "query_text": "Student says: \"I divided 11 by 2 first.\"",
+  "retrieval_mode": "mock",
+  "top_k": 5,
+  "metadata_filters": {
+    "topic": "solving linear equations",
+    "subskill": "two-step equations",
+    "misconception_tag": "incorrect_order_of_inverse_operations"
+  },
+  "retrieved_chunks": [
+    {
+      "chunk_id": "ALG-LE-004",
+      "title": "Why not divide too early in a two-step equation",
+      "score": 1.0,
+      "content": "A common mistake in 2x + 3 = 11 is dividing 11 by 2 before handling the +3. The expression on the left is not only 2x; it is 2x + 3. First undo the +3, then divide by 2.",
+      "metadata": {
+        "topic": "solving linear equations",
+        "subskill": "two-step equations",
+        "difficulty": "medium",
+        "resource_type": "misconception_note",
+        "misconception_tag": "incorrect_order_of_inverse_operations",
+        "supports_tasks": [
+          "LE-02"
+        ],
+        "pedagogical_use": [
+          "misconception_correction"
+        ],
+        "corpus_version": "algebra_corpus_v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-LE-003",
+      "title": "Solving two-step equations",
+      "score": 0.95,
+      "content": "For a two-step equation such as 2x + 3 = 11, first undo addition or subtraction, then undo multiplication or division. Subtract 3 from both sides to get 2x = 8. Then divide both sides by 2 to get x = 4.",
+      "metadata": {
+        "topic": "solving linear equations",
+        "subskill": "two-step equations",
+        "difficulty": "medium",
+        "resource_type": "worked_example",
+        "misconception_tag": "incorrect_order_of_inverse_operations",
+        "supports_tasks": [
+          "LE-02",
+          "LE-03"
+        ],
+        "pedagogical_use": [
+          "procedural_hint",
+          "worked_step_explanation"
+        ],
+        "corpus_version": "algebra_corpus_v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-CP-002",
+      "title": "Guiding question for solving equations",
+      "score": 0.55,
+      "content": "When solving an equation, ask: What operation is currently being done to the variable, and what inverse operation will undo it while keeping both sides balanced?",
+      "metadata": {
+        "topic": "short conceptual prompt",
+        "subskill": "inverse operations",
+        "difficulty": "easy",
+        "resource_type": "guided_question",
+        "misconception_tag": "wrong_inverse_operation",
+        "supports_tasks": [
+          "CP-02",
+          "LE-01",
+          "LE-02"
+        ],
+        "pedagogical_use": [
+          "conceptual_prompt",
+          "light_hint"
+        ],
+        "corpus_version": "algebra_corpus_v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-LE-001",
+      "title": "Inverse operations and isolating a variable",
+      "score": 0.2,
+      "content": "To solve an equation, use inverse operations to isolate the variable. Addition is undone by subtraction, and subtraction is undone by addition. In x + 7 = 15, subtract 7 from both sides because the goal is to undo the +7 attached to x.",
+      "metadata": {
+        "topic": "solving linear equations",
+        "subskill": "inverse operations",
+        "difficulty": "easy",
+        "resource_type": "conceptual_explanation",
+        "misconception_tag": "wrong_inverse_operation",
+        "supports_tasks": [
+          "LE-01",
+          "WE-01"
+        ],
+        "pedagogical_use": [
+          "conceptual_prompt",
+          "light_hint",
+          "misconception_correction"
+        ],
+        "corpus_version": "algebra_corpus_v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-LE-002",
+      "title": "Balance principle in equations",
+      "score": 0.2,
+      "content": "An equation stays true only when the same operation is performed on both sides. This is called preserving equality. If you subtract 2n from one side, you must subtract 2n from the other side too. The goal is to keep the equation balanced while moving toward isolating the variable.",
+      "metadata": {
+        "topic": "solving linear equations",
+        "subskill": "inverse operations and balance principle",
+        "difficulty": "medium",
+        "resource_type": "conceptual_explanation",
+        "misconception_tag": "balance_principle_confusion",
+        "supports_tasks": [
+          "LE-01",
+          "LE-05",
+          "WE-01"
+        ],
+        "pedagogical_use": [
+          "conceptual_prompt",
+          "misconception_correction",
+          "worked_step_explanation"
+        ],
+        "corpus_version": "algebra_corpus_v1.0"
+      }
+    }
+  ],
+  "created_at": "2026-05-07T06:16:30.321149+00:00",
+  "versioning": {
+    "retrieval_log_schema_version": "retrieval_log_v1.0",
+    "corpus_version": "algebra_corpus_v1.0",
+    "retrieval_metadata_version": "retrieval_metadata_v1.0"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "evaluation_log_id": "eval_63ac42ec6ea84b19949ff498a85cdcbb",
+  "condition": "baseline",
+  "session_id": "local_dry_run_LE-02",
+  "task_id": "LE-02",
+  "turn_number": 1,
+  "request": {
+    "request_id": "local_request_baseline_LE-02_turn_1",
+    "condition": "baseline",
+    "session_id": "local_dry_run_LE-02",
+    "task_id": "LE-02",
+    "turn_number": 1,
+    "current_learner_message": "Student says: \"I divided 11 by 2 first.\"",
+    "dry_run": true,
+    "created_at": "2026-05-07T06:16:30.320036+00:00",
+    "local_dry_run_version": "local_dry_run_v1.0"
+  },
+  "response": {
+    "response_id": "mock_response_00f5d0cd7d484af7aa77ecb488b8b992",
+    "response_text": "[LOCAL DRY RUN MOCK RESPONSE for LE-02] The baseline tutor prompt assembled successfully. No model call was made.",
+    "is_mock_response": true
+  },
+  "created_at": "2026-05-07T06:16:30.320610+00:00",
+  "learner_state_before": null,
+  "learner_state_after": null,
+  "policy_decision": null,
+  "retrieval_log": null,
+  "prompt_text": "System role:\nYou are an algebra tutoring assistant. Your task is to help a student understand and solve algebra problems clearly and accurately.\n\nTutoring goal:\nProvide instructionally useful support rather than only a final answer. Explain the mathematical reasoning in a way that supports student understanding.\n\nStudent-facing task:\nTask ID: LE-02\nAlgebra category: Solving linear equations\nStudent prompt: Solve for x: 2x + 3 = 11.\n\nExpected tutoring behavior:\n1. Solve the problem accurately.\n2. Explain each important step using clear algebra language.\n3. Use student-friendly wording appropriate for an algebra learner.\n4. If the student gives an incorrect answer or expresses a misconception, identify the error and explain why it is incorrect.\n5. Ask a guiding question when appropriate rather than immediately providing the full solution.\n6. Encourage mathematical reasoning and conceptual understanding.\n7. Keep the response concise, focused, and instructionally supportive.\n\nSimulated follow-up turn:\nStudent says: \"I divided 11 by 2 first.\"\n\nResponse constraints:\nDo not use retrieval-augmented generation.\nDo not use Gemini File Search.\nDo not create or query a File Search store.\nDo not use uploaded files or uploaded images.\nDo not use metadata filters, page-level citations, or retrieved context.\nDo not use external curriculum documents.\nDo not use a knowledge base.\nDo not use learner-state tracking.\nDo not use prior-session memory.\nRespond only from the current prompt context and the model’s general parametric knowledge.\nDo not invent unsupported facts or claims.\nDo not mention that this is an evaluation unless explicitly asked.\n\nOutput:\nProvide the baseline tutor response for this single evaluation episode.",
+  "model_id": "local_mock_no_model_call",
+  "latency_ms": null,
+  "error": null,
+  "versioning": {
+    "task_bank_version": "v1.0",
+    "evaluation_schema_version": "evaluation_log_v1.0",
+    "baseline_prompt_version": "baseline_prompt_v1.0",
+    "retrieval_enabled": "false",
+    "learner_state_enabled": "false"
+  }
+}
