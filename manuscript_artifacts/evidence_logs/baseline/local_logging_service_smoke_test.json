@@ -1,5 +1,5 @@
 {
-  "evaluation_log_id": "eval_d00898d367fe4667a3f4dfc53f77ff31",
+  "evaluation_log_id": "eval_2a4ebb2936d446619010cb32c50aa0e6",
   "condition": "baseline",
   "session_id": "session_demo_logging",
   "task_id": "LE-02",
@@ -10,11 +10,11 @@
     "dry_run": true
   },
   "response": {
-    "response_id": "mock_response_55adc4e7fd0543d6ab5fe8f4877e5c98",
+    "response_id": "mock_response_32bfdb5c17e94098beebe29aef391763",
     "response_text": "[LOCAL DRY RUN MOCK RESPONSE for LE-02] The baseline tutor prompt assembled successfully. No model call was made.",
     "is_mock_response": true
   },
-  "created_at": "2026-05-07T04:56:43.698067+00:00",
+  "created_at": "2026-05-07T05:19:26.967266+00:00",
   "learner_state_before": null,
   "learner_state_after": null,
   "policy_decision": null,
