@@ -57,6 +57,7 @@ KNOWN_ERROR_PATTERNS = {
     "sign changes": "move_across_sign_error"
 }
 
+
 @dataclass(frozen=True)
 class StateTransition:
     transition_id: str
