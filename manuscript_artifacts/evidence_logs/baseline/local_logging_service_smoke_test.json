@@ -1,0 +1,33 @@
+{
+  "evaluation_log_id": "eval_d00898d367fe4667a3f4dfc53f77ff31",
+  "condition": "baseline",
+  "session_id": "session_demo_logging",
+  "task_id": "LE-02",
+  "turn_number": 1,
+  "request": {
+    "task_id": "LE-02",
+    "current_learner_message": "Solve for x: 2x + 3 = 11.",
+    "dry_run": true
+  },
+  "response": {
+    "response_id": "mock_response_55adc4e7fd0543d6ab5fe8f4877e5c98",
+    "response_text": "[LOCAL DRY RUN MOCK RESPONSE for LE-02] The baseline tutor prompt assembled successfully. No model call was made.",
+    "is_mock_response": true
+  },
+  "created_at": "2026-05-07T04:56:43.698067+00:00",
+  "learner_state_before": null,
+  "learner_state_after": null,
+  "policy_decision": null,
+  "retrieval_log": null,
+  "prompt_text": "Example prompt text",
+  "model_id": "local_mock_no_model_call",
+  "latency_ms": null,
+  "error": null,
+  "versioning": {
+    "task_bank_version": "v1.0",
+    "evaluation_schema_version": "evaluation_log_v1.0",
+    "baseline_prompt_version": "baseline_prompt_v1.0",
+    "retrieval_enabled": "false",
+    "learner_state_enabled": "false"
+  }
+}
