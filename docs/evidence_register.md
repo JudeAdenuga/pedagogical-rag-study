@@ -41,3 +41,29 @@ Condition:
 Supplementary placement:
 - Candidate source for Supplementary Figure S12 after sanitization.
 
+
+## Real Gemini baseline evidence: LE-02
+
+Date captured: 2026-05-11
+
+Status: baseline_episode_complete
+
+Task ID: LE-02
+
+Artifacts:
+- backend/app/baseline.py
+- manuscript_artifacts/evidence_logs/baseline/baseline_episode_LE_02_sample.json
+
+Condition:
+- baseline_prompt_only
+- model = gemini-2.5-flash
+- retrieval_used = false
+- gemini_file_search_used = false
+- learner_state_tracking_used = false
+- is_mock_response = false
+- model_calls_made = true
+- external_services_called = true
+
+Supplementary placement:
+- Candidate source for Supplementary Figure S12 after sanitization.
+
