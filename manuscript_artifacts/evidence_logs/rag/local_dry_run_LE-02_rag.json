@@ -1,5 +1,5 @@
 {
-  "evaluation_log_id": "eval_39cff9ef86104b1bbea61feea5357088",
+  "evaluation_log_id": "eval_043b247499754e13951daf716b0f4d9f",
   "condition": "pedagogical_rag",
   "session_id": "local_dry_run_LE-02",
   "task_id": "LE-02",
@@ -12,18 +12,18 @@
     "turn_number": 1,
     "current_learner_message": "Student says: \"I divided 11 by 2 first.\"",
     "dry_run": true,
-    "created_at": "2026-05-07T06:16:30.321597+00:00",
+    "created_at": "2026-05-11T05:11:56.623221+00:00",
     "local_dry_run_version": "local_dry_run_v1.0"
   },
   "response": {
-    "response_id": "mock_response_d021596578e64c1e9457fafc2c76f69f",
+    "response_id": "mock_response_1210d50565f84897aa1479a1f1c2e548",
     "response_text": "[LOCAL DRY RUN MOCK RESPONSE for LE-02] The pedagogical RAG prompt assembled successfully using mode misconception_correction. No model call was made.",
     "is_mock_response": true
   },
-  "created_at": "2026-05-07T06:16:30.321753+00:00",
+  "created_at": "2026-05-11T05:11:56.623378+00:00",
   "learner_state_before": null,
   "learner_state_after": {
-    "state_id": "state_3779dcba400447a7803e984586b5e61e",
+    "state_id": "state_071464a2169e47379f63a5e1f9c988b3",
     "session_id": "local_dry_run_LE-02",
     "task_id": "LE-02",
     "turn_number": 1,
@@ -36,8 +36,8 @@
     "support_level": "misconception_correction",
     "interaction_summary": "Task LE-02 targets solving linear equations / two-step equations. Learner message: Student says: \"I divided 11 by 2 first.\" Detected error type: incorrect_order_of_inverse_operations. Most recent pedagogical mode: misconception_correction.",
     "last_pedagogical_mode": "misconception_correction",
-    "state_created_at": "2026-05-07T06:16:30.320855+00:00",
-    "state_updated_at": "2026-05-07T06:16:30.320863+00:00",
+    "state_created_at": "2026-05-11T05:11:56.622567+00:00",
+    "state_updated_at": "2026-05-11T05:11:56.622575+00:00",
     "versioning": {
       "task_bank_version": "v1.0",
       "policy_version": "pedagogical_policy_v1.0",
@@ -45,7 +45,7 @@
     }
   },
   "policy_decision": {
-    "policy_decision_id": "policy_66d26edb66d0411d97132694baf9fe8e",
+    "policy_decision_id": "policy_566af5338fbe46ad8e69067d8e604c75",
     "session_id": "local_dry_run_LE-02",
     "task_id": "LE-02",
     "turn_number": 1,
@@ -69,10 +69,10 @@
       "message_preview": "student says: \"i divided 11 by 2 first.\""
     },
     "policy_version": "pedagogical_policy_v1.1",
-    "created_at": "2026-05-07T06:16:30.320846+00:00"
+    "created_at": "2026-05-11T05:11:56.622557+00:00"
   },
   "retrieval_log": {
-    "retrieval_log_id": "retrieval_2987e20dc9234d2e9981b211a7344990",
+    "retrieval_log_id": "retrieval_9ed4fa37051b4b038ceb11cb6b567b54",
     "session_id": "local_dry_run_LE-02",
     "task_id": "LE-02",
     "turn_number": 1,
@@ -198,7 +198,7 @@
         }
       }
     ],
-    "created_at": "2026-05-07T06:16:30.321149+00:00",
+    "created_at": "2026-05-11T05:11:56.622865+00:00",
     "versioning": {
       "retrieval_log_schema_version": "retrieval_log_v1.0",
       "corpus_version": "algebra_corpus_v1.0",
