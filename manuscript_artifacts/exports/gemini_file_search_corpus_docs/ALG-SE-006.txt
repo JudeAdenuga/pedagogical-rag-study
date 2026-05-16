@@ -1,0 +1,13 @@
+Title: Like and unlike terms
+chunk_id: ALG-SE-006
+corpus_version: v1.0
+topic: simplifying expressions
+subskill: like and unlike terms
+difficulty: easy
+resource_type: conceptual_explanation
+misconception_tag: combining_unlike_terms
+supports_tasks: SE-05
+pedagogical_use: conceptual_prompt, light_hint, misconception_correction
+
+Instructional content:
+Terms can be combined only when they are like terms. Variable terms such as 5m and 2m can combine because both have m. Constants such as -3 and 9 can combine because neither has a variable. But 5m and 9 cannot combine because one has a variable and the other does not.

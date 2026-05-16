@@ -1,0 +1,13 @@
+Title: Correcting the move-across misconception
+chunk_id: ALG-WE-001
+corpus_version: v1.0
+topic: worked-solution error identification
+subskill: inverse operations and balance principle
+difficulty: medium
+resource_type: misconception_note
+misconception_tag: move_across_sign_error
+supports_tasks: WE-01
+pedagogical_use: misconception_correction, worked_step_explanation
+
+Instructional content:
+The phrase 'move it across and change the sign' can hide the real reasoning. A better explanation is inverse operations. In 2x + 5 = 17, the +5 is undone by subtracting 5 from both sides. This gives 2x = 12, then x = 6.

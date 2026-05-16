@@ -1,0 +1,230 @@
+{
+  "retrieval_log_id": "retrieval_e86834562fec4e0895366610612614d9",
+  "session_id": "rag_two_turn_SE-01",
+  "task_id": "SE-01",
+  "turn_number": 1,
+  "query_text": "Retrieve the most relevant algebra instructional evidence for this pedagogical RAG tutoring turn.\n\nTask ID: SE-01\nTurn number: 1\nAlgebra category: Simplifying expressions\nTopic: simplifying expressions\nSubskill: combining like terms\nOriginal student-facing task: Simplify: 3x + 5x - 2. Explain your steps.\nCurrent learner message: Simplify: 3x + 5x - 2. Explain your steps.\nSelected pedagogical response mode: worked_step_explanation\n\nPrioritize evidence that supports:\n- mathematically accurate explanation,\n- misconception correction where relevant,\n- stepwise tutoring support,\n- the selected pedagogical response mode.\n",
+  "retrieval_mode": "gemini_file_search_retrieval_probe",
+  "top_k": 5,
+  "metadata_filters": {},
+  "retrieved_chunks": [
+    {
+      "chunk_id": "ALG-SE-002",
+      "title": "Why 3x plus 5x is not 6x",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "A common error is adding 3x and 5x incorrectly. The coefficients 3 and 5 tell how many x-groups there are. Three x-groups plus five x-groups gives eight x-groups, so 3x + 5x = 8x, not 6x.",
+      "retrieval_excerpt": "Title: Why 3x plus 5x is not 6x\nchunk_id: ALG-SE-002\ncorpus_version: v1.0\ntopic: simplifying expressions\nsubskill: combining like terms\ndifficulty: easy\nresource_type: misconception_note\nmisconception_tag: incorrect_coefficient_addition\nsupports_tasks: SE-01\npedagogical_use: misconception_correction\n\nInstructional content:\nA common error is adding 3x and 5x incorrectly. The coefficients 3 and 5 tell how many x-groups there are. Three x-groups plus five x-groups gives eight x-groups, so 3x + 5x = 8x, not 6x.",
+      "metadata": {
+        "topic": "simplifying expressions",
+        "subskill": "combining like terms",
+        "difficulty": "easy",
+        "resource_type": "misconception_note",
+        "misconception_tag": "incorrect_coefficient_addition",
+        "supports_tasks": "SE-01",
+        "pedagogical_use": "misconception_correction",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    },
+    {
+      "chunk_id": "ALG-SE-001",
+      "title": "Combining like terms with variables",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "Like terms have the same variable part raised to the same power. For example, 3x and 5x are like terms because both contain x. To combine them, add the coefficients: 3x + 5x = 8x. A constant term such as -2 does not combine with x-terms because it has no variable.",
+      "retrieval_excerpt": "Title: Combining like terms with variables\nchunk_id: ALG-SE-001\ncorpus_version: v1.0\ntopic: simplifying expressions\nsubskill: combining like terms\ndifficulty: easy\nresource_type: conceptual_explanation\nmisconception_tag: incorrect_coefficient_addition\nsupports_tasks: SE-01\npedagogical_use: conceptual_prompt, light_hint, misconception_correction\n\nInstructional content:\nLike terms have the same variable part raised to the same power. For example, 3x and 5x are like terms because both contain x. To combine them, add the coefficients: 3x + 5x = 8x. A constant term such as -2 does not combine with x-terms because it has no variable.",
+      "metadata": {
+        "topic": "simplifying expressions",
+        "subskill": "combining like terms",
+        "difficulty": "easy",
+        "resource_type": "conceptual_explanation",
+        "misconception_tag": "incorrect_coefficient_addition",
+        "supports_tasks": "SE-01",
+        "pedagogical_use": "conceptual_prompt,light_hint,misconception_correction",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    },
+    {
+      "chunk_id": "ALG-SE-006",
+      "title": "Like and unlike terms",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "Terms can be combined only when they are like terms. Variable terms such as 5m and 2m can combine because both have m. Constants such as -3 and 9 can combine because neither has a variable. But 5m and 9 cannot combine because one has a variable and the other does not.",
+      "retrieval_excerpt": "Title: Like and unlike terms\nchunk_id: ALG-SE-006\ncorpus_version: v1.0\ntopic: simplifying expressions\nsubskill: like and unlike terms\ndifficulty: easy\nresource_type: conceptual_explanation\nmisconception_tag: combining_unlike_terms\nsupports_tasks: SE-05\npedagogical_use: conceptual_prompt, light_hint, misconception_correction\n\nInstructional content:\nTerms can be combined only when they are like terms. Variable terms such as 5m and 2m can combine because both have m. Constants such as -3 and 9 can combine because neither has a variable. But 5m and 9 cannot combine because one has a variable and the other does not.",
+      "metadata": {
+        "topic": "simplifying expressions",
+        "subskill": "like and unlike terms",
+        "difficulty": "easy",
+        "resource_type": "conceptual_explanation",
+        "misconception_tag": "combining_unlike_terms",
+        "supports_tasks": "SE-05",
+        "pedagogical_use": "conceptual_prompt,light_hint,misconception_correction",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    },
+    {
+      "chunk_id": "ALG-WE-003",
+      "title": "Combining unlike terms in worked solutions",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "A variable term and a constant term cannot be combined into one term. For example, 4x + 7 cannot become 11x because 7 is not an x-term. Only terms with the same variable part can be combined.",
+      "retrieval_excerpt": "Title: Combining unlike terms in worked solutions\nchunk_id: ALG-WE-003\ncorpus_version: v1.0\ntopic: worked-solution error identification\nsubskill: like and unlike terms\ndifficulty: easy\nresource_type: misconception_note\nmisconception_tag: combining_unlike_terms\nsupports_tasks: WE-03, SE-05\npedagogical_use: misconception_correction\n\nInstructional content:\nA variable term and a constant term cannot be combined into one term. For example, 4x + 7 cannot become 11x because 7 is not an x-term. Only terms with the same variable part can be combined.",
+      "metadata": {
+        "topic": "worked-solution error identification",
+        "subskill": "like and unlike terms",
+        "difficulty": "easy",
+        "resource_type": "misconception_note",
+        "misconception_tag": "combining_unlike_terms",
+        "supports_tasks": "WE-03,SE-05",
+        "pedagogical_use": "misconception_correction",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    },
+    {
+      "chunk_id": "ALG-SE-003",
+      "title": "Distributive property before combining like terms",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "When simplifying an expression with parentheses, distribute first, then combine like terms. Example: 4(a + 3) - 2a becomes 4a + 12 - 2a. Then combine the like terms 4a and -2a to get 2a + 12.",
+      "retrieval_excerpt": "Title: Distributive property before combining like terms\nchunk_id: ALG-SE-003\ncorpus_version: v1.0\ntopic: simplifying expressions\nsubskill: distributive property and combining like terms\ndifficulty: medium\nresource_type: worked_example\nmisconception_tag: distribution_or_combining_error\nsupports_tasks: SE-02, SE-03\npedagogical_use: procedural_hint, worked_step_explanation\n\nInstructional content:\nWhen simplifying an expression with parentheses, distribute first, then combine like terms. Example: 4(a + 3) - 2a becomes 4a + 12 - 2a. Then combine the like terms 4a and -2a to get 2a + 12.",
+      "metadata": {
+        "topic": "simplifying expressions",
+        "subskill": "distributive property and combining like terms",
+        "difficulty": "medium",
+        "resource_type": "worked_example",
+        "misconception_tag": "distribution_or_combining_error",
+        "supports_tasks": "SE-02,SE-03",
+        "pedagogical_use": "procedural_hint,worked_step_explanation",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    }
+  ],
+  "created_at": "2026-05-16T01:28:51.886555+00:00",
+  "versioning": {
+    "retrieval_log_schema_version": "retrieval_log_v1.0",
+    "corpus_version": "algebra_corpus_v1.0",
+    "retrieval_metadata_version": "retrieval_metadata_v1.0"
+  },
+  "retrieval_probe": {
+    "retrieval_probe_id": "rag_retrieval_probe_42474519ecc940e9a0150eb9d054e08c",
+    "rag_file_search_service_version": "rag_file_search_service_v1.0",
+    "store_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+    "retrieval_model": "gemini-2.5-flash",
+    "retrieval_probe_prompt": "Use File Search to retrieve the most relevant algebra instructional evidence for the request below.\n\nReturn only a brief acknowledgement. Do not provide the tutoring response.\nThe application will separately use the retrieved grounding chunks.\n\nRetrieval request:\nRetrieve the most relevant algebra instructional evidence for this pedagogical RAG tutoring turn.\n\nTask ID: SE-01\nTurn number: 1\nAlgebra category: Simplifying expressions\nTopic: simplifying expressions\nSubskill: combining like terms\nOriginal student-facing task: Simplify: 3x + 5x - 2. Explain your steps.\nCurrent learner message: Simplify: 3x + 5x - 2. Explain your steps.\nSelected pedagogical response mode: worked_step_explanation\n\nPrioritize evidence that supports:\n- mathematically accurate explanation,\n- misconception correction where relevant,\n- stepwise tutoring support,\n- the selected pedagogical response mode.\n\n",
+    "retrieval_probe_response_text": "I have retrieved relevant algebra instructional evidence for your request.",
+    "retrieved_chunk_count": 5,
+    "retrieved_chunks": [
+      {
+        "chunk_id": "ALG-SE-002",
+        "title": "Why 3x plus 5x is not 6x",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "A common error is adding 3x and 5x incorrectly. The coefficients 3 and 5 tell how many x-groups there are. Three x-groups plus five x-groups gives eight x-groups, so 3x + 5x = 8x, not 6x.",
+        "retrieval_excerpt": "Title: Why 3x plus 5x is not 6x\nchunk_id: ALG-SE-002\ncorpus_version: v1.0\ntopic: simplifying expressions\nsubskill: combining like terms\ndifficulty: easy\nresource_type: misconception_note\nmisconception_tag: incorrect_coefficient_addition\nsupports_tasks: SE-01\npedagogical_use: misconception_correction\n\nInstructional content:\nA common error is adding 3x and 5x incorrectly. The coefficients 3 and 5 tell how many x-groups there are. Three x-groups plus five x-groups gives eight x-groups, so 3x + 5x = 8x, not 6x.",
+        "metadata": {
+          "topic": "simplifying expressions",
+          "subskill": "combining like terms",
+          "difficulty": "easy",
+          "resource_type": "misconception_note",
+          "misconception_tag": "incorrect_coefficient_addition",
+          "supports_tasks": "SE-01",
+          "pedagogical_use": "misconception_correction",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      },
+      {
+        "chunk_id": "ALG-SE-001",
+        "title": "Combining like terms with variables",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "Like terms have the same variable part raised to the same power. For example, 3x and 5x are like terms because both contain x. To combine them, add the coefficients: 3x + 5x = 8x. A constant term such as -2 does not combine with x-terms because it has no variable.",
+        "retrieval_excerpt": "Title: Combining like terms with variables\nchunk_id: ALG-SE-001\ncorpus_version: v1.0\ntopic: simplifying expressions\nsubskill: combining like terms\ndifficulty: easy\nresource_type: conceptual_explanation\nmisconception_tag: incorrect_coefficient_addition\nsupports_tasks: SE-01\npedagogical_use: conceptual_prompt, light_hint, misconception_correction\n\nInstructional content:\nLike terms have the same variable part raised to the same power. For example, 3x and 5x are like terms because both contain x. To combine them, add the coefficients: 3x + 5x = 8x. A constant term such as -2 does not combine with x-terms because it has no variable.",
+        "metadata": {
+          "topic": "simplifying expressions",
+          "subskill": "combining like terms",
+          "difficulty": "easy",
+          "resource_type": "conceptual_explanation",
+          "misconception_tag": "incorrect_coefficient_addition",
+          "supports_tasks": "SE-01",
+          "pedagogical_use": "conceptual_prompt,light_hint,misconception_correction",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      },
+      {
+        "chunk_id": "ALG-SE-006",
+        "title": "Like and unlike terms",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "Terms can be combined only when they are like terms. Variable terms such as 5m and 2m can combine because both have m. Constants such as -3 and 9 can combine because neither has a variable. But 5m and 9 cannot combine because one has a variable and the other does not.",
+        "retrieval_excerpt": "Title: Like and unlike terms\nchunk_id: ALG-SE-006\ncorpus_version: v1.0\ntopic: simplifying expressions\nsubskill: like and unlike terms\ndifficulty: easy\nresource_type: conceptual_explanation\nmisconception_tag: combining_unlike_terms\nsupports_tasks: SE-05\npedagogical_use: conceptual_prompt, light_hint, misconception_correction\n\nInstructional content:\nTerms can be combined only when they are like terms. Variable terms such as 5m and 2m can combine because both have m. Constants such as -3 and 9 can combine because neither has a variable. But 5m and 9 cannot combine because one has a variable and the other does not.",
+        "metadata": {
+          "topic": "simplifying expressions",
+          "subskill": "like and unlike terms",
+          "difficulty": "easy",
+          "resource_type": "conceptual_explanation",
+          "misconception_tag": "combining_unlike_terms",
+          "supports_tasks": "SE-05",
+          "pedagogical_use": "conceptual_prompt,light_hint,misconception_correction",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      },
+      {
+        "chunk_id": "ALG-WE-003",
+        "title": "Combining unlike terms in worked solutions",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "A variable term and a constant term cannot be combined into one term. For example, 4x + 7 cannot become 11x because 7 is not an x-term. Only terms with the same variable part can be combined.",
+        "retrieval_excerpt": "Title: Combining unlike terms in worked solutions\nchunk_id: ALG-WE-003\ncorpus_version: v1.0\ntopic: worked-solution error identification\nsubskill: like and unlike terms\ndifficulty: easy\nresource_type: misconception_note\nmisconception_tag: combining_unlike_terms\nsupports_tasks: WE-03, SE-05\npedagogical_use: misconception_correction\n\nInstructional content:\nA variable term and a constant term cannot be combined into one term. For example, 4x + 7 cannot become 11x because 7 is not an x-term. Only terms with the same variable part can be combined.",
+        "metadata": {
+          "topic": "worked-solution error identification",
+          "subskill": "like and unlike terms",
+          "difficulty": "easy",
+          "resource_type": "misconception_note",
+          "misconception_tag": "combining_unlike_terms",
+          "supports_tasks": "WE-03,SE-05",
+          "pedagogical_use": "misconception_correction",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      },
+      {
+        "chunk_id": "ALG-SE-003",
+        "title": "Distributive property before combining like terms",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "When simplifying an expression with parentheses, distribute first, then combine like terms. Example: 4(a + 3) - 2a becomes 4a + 12 - 2a. Then combine the like terms 4a and -2a to get 2a + 12.",
+        "retrieval_excerpt": "Title: Distributive property before combining like terms\nchunk_id: ALG-SE-003\ncorpus_version: v1.0\ntopic: simplifying expressions\nsubskill: distributive property and combining like terms\ndifficulty: medium\nresource_type: worked_example\nmisconception_tag: distribution_or_combining_error\nsupports_tasks: SE-02, SE-03\npedagogical_use: procedural_hint, worked_step_explanation\n\nInstructional content:\nWhen simplifying an expression with parentheses, distribute first, then combine like terms. Example: 4(a + 3) - 2a becomes 4a + 12 - 2a. Then combine the like terms 4a and -2a to get 2a + 12.",
+        "metadata": {
+          "topic": "simplifying expressions",
+          "subskill": "distributive property and combining like terms",
+          "difficulty": "medium",
+          "resource_type": "worked_example",
+          "misconception_tag": "distribution_or_combining_error",
+          "supports_tasks": "SE-02,SE-03",
+          "pedagogical_use": "procedural_hint,worked_step_explanation",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      }
+    ],
+    "created_at": "2026-05-16T01:28:51.884717+00:00"
+  }
+}

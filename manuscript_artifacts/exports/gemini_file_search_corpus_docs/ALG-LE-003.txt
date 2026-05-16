@@ -1,0 +1,13 @@
+Title: Solving two-step equations
+chunk_id: ALG-LE-003
+corpus_version: v1.0
+topic: solving linear equations
+subskill: two-step equations
+difficulty: medium
+resource_type: worked_example
+misconception_tag: incorrect_order_of_inverse_operations
+supports_tasks: LE-02, LE-03
+pedagogical_use: procedural_hint, worked_step_explanation
+
+Instructional content:
+For a two-step equation such as 2x + 3 = 11, first undo addition or subtraction, then undo multiplication or division. Subtract 3 from both sides to get 2x = 8. Then divide both sides by 2 to get x = 4.

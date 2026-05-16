@@ -1,0 +1,744 @@
+{
+  "status": "gemini_file_search_store_ready",
+  "rag_file_search_service_version": "rag_file_search_service_v1.0",
+  "store_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+  "store_display_name": "pedagogical-rag-algebra-corpus-v1",
+  "created_at": "2026-05-16T01:27:26.842777+00:00",
+  "corpus_seed_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/backend/data/algebra_corpus_seed.json",
+  "generated_corpus_documents_dir": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs",
+  "documents_rendered": 26,
+  "documents_imported": 26,
+  "rendered_documents": [
+    {
+      "chunk_id": "ALG-SE-001",
+      "title": "Combining like terms with variables",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SE-001.txt",
+      "metadata": {
+        "topic": "simplifying expressions",
+        "subskill": "combining like terms",
+        "difficulty": "easy",
+        "resource_type": "conceptual_explanation",
+        "misconception_tag": "incorrect_coefficient_addition",
+        "supports_tasks": [
+          "SE-01"
+        ],
+        "pedagogical_use": [
+          "conceptual_prompt",
+          "light_hint",
+          "misconception_correction"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-SE-002",
+      "title": "Why 3x plus 5x is not 6x",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SE-002.txt",
+      "metadata": {
+        "topic": "simplifying expressions",
+        "subskill": "combining like terms",
+        "difficulty": "easy",
+        "resource_type": "misconception_note",
+        "misconception_tag": "incorrect_coefficient_addition",
+        "supports_tasks": [
+          "SE-01"
+        ],
+        "pedagogical_use": [
+          "misconception_correction"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-SE-003",
+      "title": "Distributive property before combining like terms",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SE-003.txt",
+      "metadata": {
+        "topic": "simplifying expressions",
+        "subskill": "distributive property and combining like terms",
+        "difficulty": "medium",
+        "resource_type": "worked_example",
+        "misconception_tag": "distribution_or_combining_error",
+        "supports_tasks": [
+          "SE-02",
+          "SE-03"
+        ],
+        "pedagogical_use": [
+          "procedural_hint",
+          "worked_step_explanation"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-SE-004",
+      "title": "Distribution over subtraction",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SE-004.txt",
+      "metadata": {
+        "topic": "simplifying expressions",
+        "subskill": "distribution over subtraction",
+        "difficulty": "medium",
+        "resource_type": "conceptual_explanation",
+        "misconception_tag": "distribution_over_subtraction_confusion",
+        "supports_tasks": [
+          "SE-03"
+        ],
+        "pedagogical_use": [
+          "conceptual_prompt",
+          "procedural_hint",
+          "worked_step_explanation"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-SE-005",
+      "title": "Negative distribution with grouped expressions",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SE-005.txt",
+      "metadata": {
+        "topic": "simplifying expressions",
+        "subskill": "negative distribution",
+        "difficulty": "medium",
+        "resource_type": "misconception_note",
+        "misconception_tag": "negative_distribution_sign_error",
+        "supports_tasks": [
+          "SE-04"
+        ],
+        "pedagogical_use": [
+          "misconception_correction",
+          "worked_step_explanation"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-SE-006",
+      "title": "Like and unlike terms",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SE-006.txt",
+      "metadata": {
+        "topic": "simplifying expressions",
+        "subskill": "like and unlike terms",
+        "difficulty": "easy",
+        "resource_type": "conceptual_explanation",
+        "misconception_tag": "combining_unlike_terms",
+        "supports_tasks": [
+          "SE-05"
+        ],
+        "pedagogical_use": [
+          "conceptual_prompt",
+          "light_hint",
+          "misconception_correction"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-LE-001",
+      "title": "Inverse operations and isolating a variable",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-LE-001.txt",
+      "metadata": {
+        "topic": "solving linear equations",
+        "subskill": "inverse operations",
+        "difficulty": "easy",
+        "resource_type": "conceptual_explanation",
+        "misconception_tag": "wrong_inverse_operation",
+        "supports_tasks": [
+          "LE-01",
+          "WE-01"
+        ],
+        "pedagogical_use": [
+          "conceptual_prompt",
+          "light_hint",
+          "misconception_correction"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-LE-002",
+      "title": "Balance principle in equations",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-LE-002.txt",
+      "metadata": {
+        "topic": "solving linear equations",
+        "subskill": "inverse operations and balance principle",
+        "difficulty": "medium",
+        "resource_type": "conceptual_explanation",
+        "misconception_tag": "balance_principle_confusion",
+        "supports_tasks": [
+          "LE-01",
+          "LE-05",
+          "WE-01"
+        ],
+        "pedagogical_use": [
+          "conceptual_prompt",
+          "misconception_correction",
+          "worked_step_explanation"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-LE-003",
+      "title": "Solving two-step equations",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-LE-003.txt",
+      "metadata": {
+        "topic": "solving linear equations",
+        "subskill": "two-step equations",
+        "difficulty": "medium",
+        "resource_type": "worked_example",
+        "misconception_tag": "incorrect_order_of_inverse_operations",
+        "supports_tasks": [
+          "LE-02",
+          "LE-03"
+        ],
+        "pedagogical_use": [
+          "procedural_hint",
+          "worked_step_explanation"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-LE-004",
+      "title": "Why not divide too early in a two-step equation",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-LE-004.txt",
+      "metadata": {
+        "topic": "solving linear equations",
+        "subskill": "two-step equations",
+        "difficulty": "medium",
+        "resource_type": "misconception_note",
+        "misconception_tag": "incorrect_order_of_inverse_operations",
+        "supports_tasks": [
+          "LE-02"
+        ],
+        "pedagogical_use": [
+          "misconception_correction"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-LE-005",
+      "title": "Distribution in equations",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-LE-005.txt",
+      "metadata": {
+        "topic": "solving linear equations",
+        "subskill": "distribution in equations",
+        "difficulty": "medium",
+        "resource_type": "worked_example",
+        "misconception_tag": "incomplete_distribution",
+        "supports_tasks": [
+          "LE-04"
+        ],
+        "pedagogical_use": [
+          "procedural_hint",
+          "misconception_correction",
+          "worked_step_explanation"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-LE-006",
+      "title": "Variables on both sides",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-LE-006.txt",
+      "metadata": {
+        "topic": "solving linear equations",
+        "subskill": "variables on both sides",
+        "difficulty": "medium",
+        "resource_type": "worked_example",
+        "misconception_tag": "balance_principle_confusion",
+        "supports_tasks": [
+          "LE-05"
+        ],
+        "pedagogical_use": [
+          "procedural_hint",
+          "worked_step_explanation"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-SUB-001",
+      "title": "Substitution means replacing a variable with a value",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SUB-001.txt",
+      "metadata": {
+        "topic": "substitution",
+        "subskill": "multiplication notation in algebra",
+        "difficulty": "easy",
+        "resource_type": "conceptual_explanation",
+        "misconception_tag": "concatenation_instead_of_multiplication",
+        "supports_tasks": [
+          "SUB-01"
+        ],
+        "pedagogical_use": [
+          "conceptual_prompt",
+          "light_hint",
+          "misconception_correction"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-SUB-002",
+      "title": "Order of operations with exponents after substitution",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SUB-002.txt",
+      "metadata": {
+        "topic": "substitution",
+        "subskill": "order of operations with exponents",
+        "difficulty": "medium",
+        "resource_type": "worked_example",
+        "misconception_tag": "order_of_operations_error",
+        "supports_tasks": [
+          "SUB-02"
+        ],
+        "pedagogical_use": [
+          "procedural_hint",
+          "misconception_correction",
+          "worked_step_explanation"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-SUB-003",
+      "title": "Substitution with subtraction",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SUB-003.txt",
+      "metadata": {
+        "topic": "substitution",
+        "subskill": "substitution with subtraction",
+        "difficulty": "easy",
+        "resource_type": "worked_example",
+        "misconception_tag": "subtraction_sign_error",
+        "supports_tasks": [
+          "SUB-03"
+        ],
+        "pedagogical_use": [
+          "procedural_hint",
+          "misconception_correction"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-SUB-004",
+      "title": "Substitution with parentheses",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SUB-004.txt",
+      "metadata": {
+        "topic": "substitution",
+        "subskill": "substitution with parentheses",
+        "difficulty": "medium",
+        "resource_type": "conceptual_explanation",
+        "misconception_tag": "parentheses_or_partial_distribution_error",
+        "supports_tasks": [
+          "SUB-04"
+        ],
+        "pedagogical_use": [
+          "conceptual_prompt",
+          "procedural_hint",
+          "misconception_correction"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-WE-001",
+      "title": "Correcting the move-across misconception",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-WE-001.txt",
+      "metadata": {
+        "topic": "worked-solution error identification",
+        "subskill": "inverse operations and balance principle",
+        "difficulty": "medium",
+        "resource_type": "misconception_note",
+        "misconception_tag": "move_across_sign_error",
+        "supports_tasks": [
+          "WE-01"
+        ],
+        "pedagogical_use": [
+          "misconception_correction",
+          "worked_step_explanation"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-WE-002",
+      "title": "Every term inside parentheses must receive the multiplier",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-WE-002.txt",
+      "metadata": {
+        "topic": "worked-solution error identification",
+        "subskill": "distributive property",
+        "difficulty": "easy",
+        "resource_type": "misconception_note",
+        "misconception_tag": "incomplete_distribution",
+        "supports_tasks": [
+          "WE-02",
+          "LE-04"
+        ],
+        "pedagogical_use": [
+          "misconception_correction",
+          "worked_step_explanation"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-WE-003",
+      "title": "Combining unlike terms in worked solutions",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-WE-003.txt",
+      "metadata": {
+        "topic": "worked-solution error identification",
+        "subskill": "like and unlike terms",
+        "difficulty": "easy",
+        "resource_type": "misconception_note",
+        "misconception_tag": "combining_unlike_terms",
+        "supports_tasks": [
+          "WE-03",
+          "SE-05"
+        ],
+        "pedagogical_use": [
+          "misconception_correction"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-WE-004",
+      "title": "Checking each step in a worked solution",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-WE-004.txt",
+      "metadata": {
+        "topic": "worked-solution error identification",
+        "subskill": "error analysis",
+        "difficulty": "medium",
+        "resource_type": "strategy_note",
+        "misconception_tag": "multi_step_error_analysis",
+        "supports_tasks": [
+          "WE-01",
+          "WE-02",
+          "WE-03",
+          "WE-04"
+        ],
+        "pedagogical_use": [
+          "conceptual_prompt",
+          "procedural_hint"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-SR-001",
+      "title": "Interpreting symbolic relationships",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SR-001.txt",
+      "metadata": {
+        "topic": "symbolic relationship interpretation",
+        "subskill": "meaning of variables and coefficients",
+        "difficulty": "medium",
+        "resource_type": "conceptual_explanation",
+        "misconception_tag": "coefficient_meaning_confusion",
+        "supports_tasks": [
+          "SR-01"
+        ],
+        "pedagogical_use": [
+          "conceptual_prompt",
+          "worked_step_explanation"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-SR-002",
+      "title": "Understanding equivalent expressions",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SR-002.txt",
+      "metadata": {
+        "topic": "symbolic relationship interpretation",
+        "subskill": "equivalent expressions",
+        "difficulty": "medium",
+        "resource_type": "conceptual_explanation",
+        "misconception_tag": "equivalence_confusion",
+        "supports_tasks": [
+          "SR-02",
+          "SUB-04",
+          "SE-02"
+        ],
+        "pedagogical_use": [
+          "conceptual_prompt",
+          "procedural_hint",
+          "worked_step_explanation"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-SR-003",
+      "title": "Reading algebra expressions as structure",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SR-003.txt",
+      "metadata": {
+        "topic": "symbolic relationship interpretation",
+        "subskill": "expression structure",
+        "difficulty": "medium",
+        "resource_type": "strategy_note",
+        "misconception_tag": "expression_structure_confusion",
+        "supports_tasks": [
+          "SR-03"
+        ],
+        "pedagogical_use": [
+          "conceptual_prompt",
+          "light_hint"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-CP-001",
+      "title": "Guiding question for combining like terms",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-CP-001.txt",
+      "metadata": {
+        "topic": "short conceptual prompt",
+        "subskill": "like terms reasoning",
+        "difficulty": "easy",
+        "resource_type": "guided_question",
+        "misconception_tag": "combining_unlike_terms",
+        "supports_tasks": [
+          "CP-01",
+          "SE-05"
+        ],
+        "pedagogical_use": [
+          "conceptual_prompt",
+          "light_hint"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-CP-002",
+      "title": "Guiding question for solving equations",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-CP-002.txt",
+      "metadata": {
+        "topic": "short conceptual prompt",
+        "subskill": "inverse operations",
+        "difficulty": "easy",
+        "resource_type": "guided_question",
+        "misconception_tag": "wrong_inverse_operation",
+        "supports_tasks": [
+          "CP-02",
+          "LE-01",
+          "LE-02"
+        ],
+        "pedagogical_use": [
+          "conceptual_prompt",
+          "light_hint"
+        ],
+        "corpus_version": "v1.0"
+      }
+    },
+    {
+      "chunk_id": "ALG-CP-003",
+      "title": "Guiding question for distribution",
+      "path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-CP-003.txt",
+      "metadata": {
+        "topic": "short conceptual prompt",
+        "subskill": "distributive property",
+        "difficulty": "medium",
+        "resource_type": "guided_question",
+        "misconception_tag": "incomplete_distribution",
+        "supports_tasks": [
+          "CP-03",
+          "SE-02",
+          "SE-03",
+          "LE-04",
+          "WE-02"
+        ],
+        "pedagogical_use": [
+          "conceptual_prompt",
+          "light_hint",
+          "procedural_hint"
+        ],
+        "corpus_version": "v1.0"
+      }
+    }
+  ],
+  "imported_documents": [
+    {
+      "chunk_id": "ALG-SE-001",
+      "title": "Combining like terms with variables",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SE-001.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/combining-like-terms-with-v-yte2k3ih1gae",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-SE-002",
+      "title": "Why 3x plus 5x is not 6x",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SE-002.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/why-3x-plus-5x-is-not-6x-stfs5dgbllum",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-SE-003",
+      "title": "Distributive property before combining like terms",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SE-003.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/distributive-property-befor-s2qy9x2v6hpm",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-SE-004",
+      "title": "Distribution over subtraction",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SE-004.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/distribution-over-subtracti-msdnoysjaxzv",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-SE-005",
+      "title": "Negative distribution with grouped expressions",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SE-005.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/negative-distribution-with--i2g99x28g31e",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-SE-006",
+      "title": "Like and unlike terms",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SE-006.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/like-and-unlike-terms-ubs4xwf142k1",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-LE-001",
+      "title": "Inverse operations and isolating a variable",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-LE-001.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/inverse-operations-and-isol-iaco222085bs",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-LE-002",
+      "title": "Balance principle in equations",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-LE-002.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/balance-principle-in-equati-txilh3cyekew",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-LE-003",
+      "title": "Solving two-step equations",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-LE-003.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/solving-twostep-equations-095y1bvsmh11",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-LE-004",
+      "title": "Why not divide too early in a two-step equation",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-LE-004.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/why-not-divide-too-early-in-lf7f9rtmxppw",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-LE-005",
+      "title": "Distribution in equations",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-LE-005.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/distribution-in-equations-c6x2c8qekqte",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-LE-006",
+      "title": "Variables on both sides",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-LE-006.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/variables-on-both-sides-wmpig3u7blb8",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-SUB-001",
+      "title": "Substitution means replacing a variable with a value",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SUB-001.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/substitution-means-replacin-q9zcnzf1yokr",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-SUB-002",
+      "title": "Order of operations with exponents after substitution",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SUB-002.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/order-of-operations-with-ex-hoj6gc0pdj0x",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-SUB-003",
+      "title": "Substitution with subtraction",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SUB-003.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/substitution-with-subtracti-v3o6pg61pku1",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-SUB-004",
+      "title": "Substitution with parentheses",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SUB-004.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/substitution-with-parenthes-p1x1tpk80664",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-WE-001",
+      "title": "Correcting the move-across misconception",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-WE-001.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/correcting-the-moveacross-m-kh4x6jgday8s",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-WE-002",
+      "title": "Every term inside parentheses must receive the multiplier",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-WE-002.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/every-term-inside-parenthes-8sc6myg6ptkv",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-WE-003",
+      "title": "Combining unlike terms in worked solutions",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-WE-003.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/combining-unlike-terms-in-w-8mtg261xeni7",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-WE-004",
+      "title": "Checking each step in a worked solution",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-WE-004.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/checking-each-step-in-a-wor-luyj30ogjsb1",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-SR-001",
+      "title": "Interpreting symbolic relationships",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SR-001.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/interpreting-symbolic-relat-h5vvxlmjjxsz",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-SR-002",
+      "title": "Understanding equivalent expressions",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SR-002.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/understanding-equivalent-ex-r9pydgw2yugb",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-SR-003",
+      "title": "Reading algebra expressions as structure",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-SR-003.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/reading-algebra-expressions-ijunot9di2by",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-CP-001",
+      "title": "Guiding question for combining like terms",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-CP-001.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/guiding-question-for-combin-2ipcwkfzpeia",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-CP-002",
+      "title": "Guiding question for solving equations",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-CP-002.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/guiding-question-for-solvin-e3fdkroukj0j",
+      "operation_done": true
+    },
+    {
+      "chunk_id": "ALG-CP-003",
+      "title": "Guiding question for distribution",
+      "generated_document_path": "/Users/judeadenuga-techcoordinator/Desktop/pedagogical-rag-study/manuscript_artifacts/exports/gemini_file_search_corpus_docs/ALG-CP-003.txt",
+      "upload_operation_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit/upload/operations/guiding-question-for-distri-vhcjrsel43s8",
+      "operation_done": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+Title: Balance principle in equations
+chunk_id: ALG-LE-002
+corpus_version: v1.0
+topic: solving linear equations
+subskill: inverse operations and balance principle
+difficulty: medium
+resource_type: conceptual_explanation
+misconception_tag: balance_principle_confusion
+supports_tasks: LE-01, LE-05, WE-01
+pedagogical_use: conceptual_prompt, misconception_correction, worked_step_explanation
+
+Instructional content:
+An equation stays true only when the same operation is performed on both sides. This is called preserving equality. If you subtract 2n from one side, you must subtract 2n from the other side too. The goal is to keep the equation balanced while moving toward isolating the variable.

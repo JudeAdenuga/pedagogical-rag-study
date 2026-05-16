@@ -1,0 +1,13 @@
+Title: Why not divide too early in a two-step equation
+chunk_id: ALG-LE-004
+corpus_version: v1.0
+topic: solving linear equations
+subskill: two-step equations
+difficulty: medium
+resource_type: misconception_note
+misconception_tag: incorrect_order_of_inverse_operations
+supports_tasks: LE-02
+pedagogical_use: misconception_correction
+
+Instructional content:
+A common mistake in 2x + 3 = 11 is dividing 11 by 2 before handling the +3. The expression on the left is not only 2x; it is 2x + 3. First undo the +3, then divide by 2.

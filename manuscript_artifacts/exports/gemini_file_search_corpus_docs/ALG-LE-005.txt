@@ -1,0 +1,13 @@
+Title: Distribution in equations
+chunk_id: ALG-LE-005
+corpus_version: v1.0
+topic: solving linear equations
+subskill: distribution in equations
+difficulty: medium
+resource_type: worked_example
+misconception_tag: incomplete_distribution
+supports_tasks: LE-04
+pedagogical_use: procedural_hint, misconception_correction, worked_step_explanation
+
+Instructional content:
+In an equation such as 3(x - 2) = 12, you may either divide both sides by 3 first or distribute first. If distributing, multiply 3 by every term inside the parentheses: 3(x - 2) becomes 3x - 6, not 3x - 2.

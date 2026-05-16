@@ -1,0 +1,13 @@
+Title: Substitution means replacing a variable with a value
+chunk_id: ALG-SUB-001
+corpus_version: v1.0
+topic: substitution
+subskill: multiplication notation in algebra
+difficulty: easy
+resource_type: conceptual_explanation
+misconception_tag: concatenation_instead_of_multiplication
+supports_tasks: SUB-01
+pedagogical_use: conceptual_prompt, light_hint, misconception_correction
+
+Instructional content:
+Substitution means replacing a variable with the given value. In algebra, 2x means 2 times x, not the two-digit number formed by writing 2 next to x. If x = 3, then 2x + 5 becomes 2(3) + 5.

@@ -1,0 +1,13 @@
+Title: Distributive property before combining like terms
+chunk_id: ALG-SE-003
+corpus_version: v1.0
+topic: simplifying expressions
+subskill: distributive property and combining like terms
+difficulty: medium
+resource_type: worked_example
+misconception_tag: distribution_or_combining_error
+supports_tasks: SE-02, SE-03
+pedagogical_use: procedural_hint, worked_step_explanation
+
+Instructional content:
+When simplifying an expression with parentheses, distribute first, then combine like terms. Example: 4(a + 3) - 2a becomes 4a + 12 - 2a. Then combine the like terms 4a and -2a to get 2a + 12.

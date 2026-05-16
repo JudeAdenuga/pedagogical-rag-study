@@ -1,0 +1,13 @@
+Title: Reading algebra expressions as structure
+chunk_id: ALG-SR-003
+corpus_version: v1.0
+topic: symbolic relationship interpretation
+subskill: expression structure
+difficulty: medium
+resource_type: strategy_note
+misconception_tag: expression_structure_confusion
+supports_tasks: SR-03
+pedagogical_use: conceptual_prompt, light_hint
+
+Instructional content:
+Algebra expressions have structure. Parentheses show groups, coefficients show multiplication, exponents show repeated multiplication, and plus or minus signs separate terms. Reading the structure first helps prevent procedural errors.

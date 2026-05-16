@@ -1,0 +1,13 @@
+Title: Guiding question for distribution
+chunk_id: ALG-CP-003
+corpus_version: v1.0
+topic: short conceptual prompt
+subskill: distributive property
+difficulty: medium
+resource_type: guided_question
+misconception_tag: incomplete_distribution
+supports_tasks: CP-03, SE-02, SE-03, LE-04, WE-02
+pedagogical_use: conceptual_prompt, light_hint, procedural_hint
+
+Instructional content:
+When distributing, ask: What is the multiplier outside the parentheses, and did I multiply it by every term inside the parentheses, including negative terms?

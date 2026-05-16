@@ -1,0 +1,238 @@
+{
+  "retrieval_log_id": "retrieval_23e552f2dbd743bfbe1a36c7e698d3e1",
+  "session_id": "rag_two_turn_SE-02",
+  "task_id": "SE-02",
+  "turn_number": 1,
+  "query_text": "Retrieve the most relevant algebra instructional evidence for this pedagogical RAG tutoring turn.\n\nTask ID: SE-02\nTurn number: 1\nAlgebra category: Simplifying expressions\nTopic: simplifying expressions\nSubskill: distributive property and combining like terms\nOriginal student-facing task: Simplify: 4(a + 3) - 2a. Show the distributive step.\nCurrent learner message: Simplify: 4(a + 3) - 2a. Show the distributive step.\nSelected pedagogical response mode: worked_step_explanation\n\nPrioritize evidence that supports:\n- mathematically accurate explanation,\n- misconception correction where relevant,\n- stepwise tutoring support,\n- the selected pedagogical response mode.\n",
+  "retrieval_mode": "gemini_file_search_retrieval_probe",
+  "top_k": 5,
+  "metadata_filters": {},
+  "retrieved_chunks": [
+    {
+      "chunk_id": "ALG-SE-003",
+      "title": "Distributive property before combining like terms",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "When simplifying an expression with parentheses, distribute first, then combine like terms. Example: 4(a + 3) - 2a becomes 4a + 12 - 2a. Then combine the like terms 4a and -2a to get 2a + 12.",
+      "retrieval_excerpt": "Title: Distributive property before combining like terms\nchunk_id: ALG-SE-003\ncorpus_version: v1.0\ntopic: simplifying expressions\nsubskill: distributive property and combining like terms\ndifficulty: medium\nresource_type: worked_example\nmisconception_tag: distribution_or_combining_error\nsupports_tasks: SE-02, SE-03\npedagogical_use: procedural_hint, worked_step_explanation\n\nInstructional content:\nWhen simplifying an expression with parentheses, distribute first, then combine like terms. Example: 4(a + 3) - 2a becomes 4a + 12 - 2a. Then combine the like terms 4a and -2a to get 2a + 12.",
+      "metadata": {
+        "topic": "simplifying expressions",
+        "subskill": "distributive property and combining like terms",
+        "difficulty": "medium",
+        "resource_type": "worked_example",
+        "misconception_tag": "distribution_or_combining_error",
+        "supports_tasks": "SE-02,SE-03",
+        "pedagogical_use": "procedural_hint,worked_step_explanation",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    },
+    {
+      "chunk_id": "ALG-SE-002",
+      "title": "Why 3x plus 5x is not 6x",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "A common error is adding 3x and 5x incorrectly. The coefficients 3 and 5 tell how many x-groups there are. Three x-groups plus five x-groups gives eight x-groups, so 3x + 5x = 8x, not 6x.",
+      "retrieval_excerpt": "Title: Why 3x plus 5x is not 6x\nchunk_id: ALG-SE-002\ncorpus_version: v1.0\ntopic: simplifying expressions\nsubskill: combining like terms\ndifficulty: easy\nresource_type: misconception_note\nmisconception_tag: incorrect_coefficient_addition\nsupports_tasks: SE-01\npedagogical_use: misconception_correction\n\nInstructional content:\nA common error is adding 3x and 5x incorrectly. The coefficients 3 and 5 tell how many x-groups there are. Three x-groups plus five x-groups gives eight x-groups, so 3x + 5x = 8x, not 6x.",
+      "metadata": {
+        "topic": "simplifying expressions",
+        "subskill": "combining like terms",
+        "difficulty": "easy",
+        "resource_type": "misconception_note",
+        "misconception_tag": "incorrect_coefficient_addition",
+        "supports_tasks": "SE-01",
+        "pedagogical_use": "misconception_correction",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    },
+    {
+      "chunk_id": "ALG-SE-005",
+      "title": "Negative distribution with grouped expressions",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "When subtracting a grouped expression, the subtraction affects the entire group. In 6y - 2(3y - 5), the multiplier is -2, not just 2. Distribute -2 to both terms: -2 times 3y is -6y, and -2 times -5 is +10. The expression becomes 6y - 6y + 10, which simplifies to 10.",
+      "retrieval_excerpt": "Title: Negative distribution with grouped expressions\nchunk_id: ALG-SE-005\ncorpus_version: v1.0\ntopic: simplifying expressions\nsubskill: negative distribution\ndifficulty: medium\nresource_type: misconception_note\nmisconception_tag: negative_distribution_sign_error\nsupports_tasks: SE-04\npedagogical_use: misconception_correction, worked_step_explanation\n\nInstructional content:\nWhen subtracting a grouped expression, the subtraction affects the entire group. In 6y - 2(3y - 5), the multiplier is -2, not just 2. Distribute -2 to both terms: -2 times 3y is -6y, and -2 times -5 is +10. The expression becomes 6y - 6y + 10, which simplifies to 10.",
+      "metadata": {
+        "topic": "simplifying expressions",
+        "subskill": "negative distribution",
+        "difficulty": "medium",
+        "resource_type": "misconception_note",
+        "misconception_tag": "negative_distribution_sign_error",
+        "supports_tasks": "SE-04",
+        "pedagogical_use": "misconception_correction,worked_step_explanation",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    },
+    {
+      "chunk_id": "ALG-WE-002",
+      "title": "Every term inside parentheses must receive the multiplier",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "When using the distributive property, the multiplier applies to every term inside the parentheses. For 3(x + 4), multiply 3 by x and also multiply 3 by 4. The result is 3x + 12, not 3x + 4.",
+      "retrieval_excerpt": "Title: Every term inside parentheses must receive the multiplier\nchunk_id: ALG-WE-002\ncorpus_version: v1.0\ntopic: worked-solution error identification\nsubskill: distributive property\ndifficulty: easy\nresource_type: misconception_note\nmisconception_tag: incomplete_distribution\nsupports_tasks: WE-02, LE-04\npedagogical_use: misconception_correction, worked_step_explanation\n\nInstructional content:\nWhen using the distributive property, the multiplier applies to every term inside the parentheses. For 3(x + 4), multiply 3 by x and also multiply 3 by 4. The result is 3x + 12, not 3x + 4.",
+      "metadata": {
+        "topic": "worked-solution error identification",
+        "subskill": "distributive property",
+        "difficulty": "easy",
+        "resource_type": "misconception_note",
+        "misconception_tag": "incomplete_distribution",
+        "supports_tasks": "WE-02,LE-04",
+        "pedagogical_use": "misconception_correction,worked_step_explanation",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    },
+    {
+      "chunk_id": "ALG-SR-002",
+      "title": "Understanding equivalent expressions",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "Equivalent expressions may look different but have the same value for every allowed value of the variable. For example, 2(x + y) and 2x + 2y are equivalent because distributing 2 gives the same total.",
+      "retrieval_excerpt": "Title: Understanding equivalent expressions\nchunk_id: ALG-SR-002\ncorpus_version: v1.0\ntopic: symbolic relationship interpretation\nsubskill: equivalent expressions\ndifficulty: medium\nresource_type: conceptual_explanation\nmisconception_tag: equivalence_confusion\nsupports_tasks: SR-02, SUB-04, SE-02\npedagogical_use: conceptual_prompt, procedural_hint, worked_step_explanation\n\nInstructional content:\nEquivalent expressions may look different but have the same value for every allowed value of the variable. For example, 2(x + y) and 2x + 2y are equivalent because distributing 2 gives the same total.",
+      "metadata": {
+        "topic": "symbolic relationship interpretation",
+        "subskill": "equivalent expressions",
+        "difficulty": "medium",
+        "resource_type": "conceptual_explanation",
+        "misconception_tag": "equivalence_confusion",
+        "supports_tasks": "SR-02,SUB-04,SE-02",
+        "pedagogical_use": "conceptual_prompt,procedural_hint,worked_step_explanation",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    }
+  ],
+  "created_at": "2026-05-16T01:36:44.124064+00:00",
+  "versioning": {
+    "retrieval_log_schema_version": "retrieval_log_v1.0",
+    "corpus_version": "algebra_corpus_v1.0",
+    "retrieval_metadata_version": "retrieval_metadata_v1.0"
+  },
+  "retrieval_probe": {
+    "retrieval_probe_id": "rag_retrieval_probe_e598b8a402194936add1954c99ab3300",
+    "rag_file_search_service_version": "rag_file_search_service_v1.0",
+    "store_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+    "retrieval_model": "gemini-2.5-flash",
+    "retrieval_probe_prompt": "Use the File Search store to retrieve the most relevant algebra instructional evidence for the request below.\n\nYou must rely on retrieved File Search evidence for this retrieval step.\nDo not solve the tutoring task.\nAfter retrieving evidence, reply with one brief sentence only:\n\"Retrieved relevant instructional evidence.\"\n\nRetrieval request:\nRetrieve the most relevant algebra instructional evidence for this pedagogical RAG tutoring turn.\n\nTask ID: SE-02\nTurn number: 1\nAlgebra category: Simplifying expressions\nTopic: simplifying expressions\nSubskill: distributive property and combining like terms\nOriginal student-facing task: Simplify: 4(a + 3) - 2a. Show the distributive step.\nCurrent learner message: Simplify: 4(a + 3) - 2a. Show the distributive step.\nSelected pedagogical response mode: worked_step_explanation\n\nPrioritize evidence that supports:\n- mathematically accurate explanation,\n- misconception correction where relevant,\n- stepwise tutoring support,\n- the selected pedagogical response mode.\n\n",
+    "retrieval_probe_response_text": "Retrieved relevant instructional evidence.",
+    "retrieved_chunk_count": 5,
+    "retrieved_chunks": [
+      {
+        "chunk_id": "ALG-SE-003",
+        "title": "Distributive property before combining like terms",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "When simplifying an expression with parentheses, distribute first, then combine like terms. Example: 4(a + 3) - 2a becomes 4a + 12 - 2a. Then combine the like terms 4a and -2a to get 2a + 12.",
+        "retrieval_excerpt": "Title: Distributive property before combining like terms\nchunk_id: ALG-SE-003\ncorpus_version: v1.0\ntopic: simplifying expressions\nsubskill: distributive property and combining like terms\ndifficulty: medium\nresource_type: worked_example\nmisconception_tag: distribution_or_combining_error\nsupports_tasks: SE-02, SE-03\npedagogical_use: procedural_hint, worked_step_explanation\n\nInstructional content:\nWhen simplifying an expression with parentheses, distribute first, then combine like terms. Example: 4(a + 3) - 2a becomes 4a + 12 - 2a. Then combine the like terms 4a and -2a to get 2a + 12.",
+        "metadata": {
+          "topic": "simplifying expressions",
+          "subskill": "distributive property and combining like terms",
+          "difficulty": "medium",
+          "resource_type": "worked_example",
+          "misconception_tag": "distribution_or_combining_error",
+          "supports_tasks": "SE-02,SE-03",
+          "pedagogical_use": "procedural_hint,worked_step_explanation",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      },
+      {
+        "chunk_id": "ALG-SE-002",
+        "title": "Why 3x plus 5x is not 6x",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "A common error is adding 3x and 5x incorrectly. The coefficients 3 and 5 tell how many x-groups there are. Three x-groups plus five x-groups gives eight x-groups, so 3x + 5x = 8x, not 6x.",
+        "retrieval_excerpt": "Title: Why 3x plus 5x is not 6x\nchunk_id: ALG-SE-002\ncorpus_version: v1.0\ntopic: simplifying expressions\nsubskill: combining like terms\ndifficulty: easy\nresource_type: misconception_note\nmisconception_tag: incorrect_coefficient_addition\nsupports_tasks: SE-01\npedagogical_use: misconception_correction\n\nInstructional content:\nA common error is adding 3x and 5x incorrectly. The coefficients 3 and 5 tell how many x-groups there are. Three x-groups plus five x-groups gives eight x-groups, so 3x + 5x = 8x, not 6x.",
+        "metadata": {
+          "topic": "simplifying expressions",
+          "subskill": "combining like terms",
+          "difficulty": "easy",
+          "resource_type": "misconception_note",
+          "misconception_tag": "incorrect_coefficient_addition",
+          "supports_tasks": "SE-01",
+          "pedagogical_use": "misconception_correction",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      },
+      {
+        "chunk_id": "ALG-SE-005",
+        "title": "Negative distribution with grouped expressions",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "When subtracting a grouped expression, the subtraction affects the entire group. In 6y - 2(3y - 5), the multiplier is -2, not just 2. Distribute -2 to both terms: -2 times 3y is -6y, and -2 times -5 is +10. The expression becomes 6y - 6y + 10, which simplifies to 10.",
+        "retrieval_excerpt": "Title: Negative distribution with grouped expressions\nchunk_id: ALG-SE-005\ncorpus_version: v1.0\ntopic: simplifying expressions\nsubskill: negative distribution\ndifficulty: medium\nresource_type: misconception_note\nmisconception_tag: negative_distribution_sign_error\nsupports_tasks: SE-04\npedagogical_use: misconception_correction, worked_step_explanation\n\nInstructional content:\nWhen subtracting a grouped expression, the subtraction affects the entire group. In 6y - 2(3y - 5), the multiplier is -2, not just 2. Distribute -2 to both terms: -2 times 3y is -6y, and -2 times -5 is +10. The expression becomes 6y - 6y + 10, which simplifies to 10.",
+        "metadata": {
+          "topic": "simplifying expressions",
+          "subskill": "negative distribution",
+          "difficulty": "medium",
+          "resource_type": "misconception_note",
+          "misconception_tag": "negative_distribution_sign_error",
+          "supports_tasks": "SE-04",
+          "pedagogical_use": "misconception_correction,worked_step_explanation",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      },
+      {
+        "chunk_id": "ALG-WE-002",
+        "title": "Every term inside parentheses must receive the multiplier",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "When using the distributive property, the multiplier applies to every term inside the parentheses. For 3(x + 4), multiply 3 by x and also multiply 3 by 4. The result is 3x + 12, not 3x + 4.",
+        "retrieval_excerpt": "Title: Every term inside parentheses must receive the multiplier\nchunk_id: ALG-WE-002\ncorpus_version: v1.0\ntopic: worked-solution error identification\nsubskill: distributive property\ndifficulty: easy\nresource_type: misconception_note\nmisconception_tag: incomplete_distribution\nsupports_tasks: WE-02, LE-04\npedagogical_use: misconception_correction, worked_step_explanation\n\nInstructional content:\nWhen using the distributive property, the multiplier applies to every term inside the parentheses. For 3(x + 4), multiply 3 by x and also multiply 3 by 4. The result is 3x + 12, not 3x + 4.",
+        "metadata": {
+          "topic": "worked-solution error identification",
+          "subskill": "distributive property",
+          "difficulty": "easy",
+          "resource_type": "misconception_note",
+          "misconception_tag": "incomplete_distribution",
+          "supports_tasks": "WE-02,LE-04",
+          "pedagogical_use": "misconception_correction,worked_step_explanation",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      },
+      {
+        "chunk_id": "ALG-SR-002",
+        "title": "Understanding equivalent expressions",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "Equivalent expressions may look different but have the same value for every allowed value of the variable. For example, 2(x + y) and 2x + 2y are equivalent because distributing 2 gives the same total.",
+        "retrieval_excerpt": "Title: Understanding equivalent expressions\nchunk_id: ALG-SR-002\ncorpus_version: v1.0\ntopic: symbolic relationship interpretation\nsubskill: equivalent expressions\ndifficulty: medium\nresource_type: conceptual_explanation\nmisconception_tag: equivalence_confusion\nsupports_tasks: SR-02, SUB-04, SE-02\npedagogical_use: conceptual_prompt, procedural_hint, worked_step_explanation\n\nInstructional content:\nEquivalent expressions may look different but have the same value for every allowed value of the variable. For example, 2(x + y) and 2x + 2y are equivalent because distributing 2 gives the same total.",
+        "metadata": {
+          "topic": "symbolic relationship interpretation",
+          "subskill": "equivalent expressions",
+          "difficulty": "medium",
+          "resource_type": "conceptual_explanation",
+          "misconception_tag": "equivalence_confusion",
+          "supports_tasks": "SR-02,SUB-04,SE-02",
+          "pedagogical_use": "conceptual_prompt,procedural_hint,worked_step_explanation",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      }
+    ],
+    "retrieval_attempts": [
+      {
+        "attempt_number": 1,
+        "response_text": "Retrieved relevant instructional evidence.",
+        "retrieved_chunk_count": 5,
+        "grounding_chunks_found": true
+      }
+    ],
+    "created_at": "2026-05-16T01:36:44.121469+00:00"
+  }
+}

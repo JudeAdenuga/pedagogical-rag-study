@@ -1,0 +1,13 @@
+Title: Guiding question for combining like terms
+chunk_id: ALG-CP-001
+corpus_version: v1.0
+topic: short conceptual prompt
+subskill: like terms reasoning
+difficulty: easy
+resource_type: guided_question
+misconception_tag: combining_unlike_terms
+supports_tasks: CP-01, SE-05
+pedagogical_use: conceptual_prompt, light_hint
+
+Instructional content:
+Before combining terms, ask: Do these terms have the same variable part? If yes, combine the coefficients. If no, keep them separate.

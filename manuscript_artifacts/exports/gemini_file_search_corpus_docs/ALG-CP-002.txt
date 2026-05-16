@@ -1,0 +1,13 @@
+Title: Guiding question for solving equations
+chunk_id: ALG-CP-002
+corpus_version: v1.0
+topic: short conceptual prompt
+subskill: inverse operations
+difficulty: easy
+resource_type: guided_question
+misconception_tag: wrong_inverse_operation
+supports_tasks: CP-02, LE-01, LE-02
+pedagogical_use: conceptual_prompt, light_hint
+
+Instructional content:
+When solving an equation, ask: What operation is currently being done to the variable, and what inverse operation will undo it while keeping both sides balanced?

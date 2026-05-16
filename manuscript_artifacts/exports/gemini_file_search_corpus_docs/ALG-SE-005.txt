@@ -1,0 +1,13 @@
+Title: Negative distribution with grouped expressions
+chunk_id: ALG-SE-005
+corpus_version: v1.0
+topic: simplifying expressions
+subskill: negative distribution
+difficulty: medium
+resource_type: misconception_note
+misconception_tag: negative_distribution_sign_error
+supports_tasks: SE-04
+pedagogical_use: misconception_correction, worked_step_explanation
+
+Instructional content:
+When subtracting a grouped expression, the subtraction affects the entire group. In 6y - 2(3y - 5), the multiplier is -2, not just 2. Distribute -2 to both terms: -2 times 3y is -6y, and -2 times -5 is +10. The expression becomes 6y - 6y + 10, which simplifies to 10.

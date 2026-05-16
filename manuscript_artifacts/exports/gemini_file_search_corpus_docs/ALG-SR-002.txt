@@ -1,0 +1,13 @@
+Title: Understanding equivalent expressions
+chunk_id: ALG-SR-002
+corpus_version: v1.0
+topic: symbolic relationship interpretation
+subskill: equivalent expressions
+difficulty: medium
+resource_type: conceptual_explanation
+misconception_tag: equivalence_confusion
+supports_tasks: SR-02, SUB-04, SE-02
+pedagogical_use: conceptual_prompt, procedural_hint, worked_step_explanation
+
+Instructional content:
+Equivalent expressions may look different but have the same value for every allowed value of the variable. For example, 2(x + y) and 2x + 2y are equivalent because distributing 2 gives the same total.

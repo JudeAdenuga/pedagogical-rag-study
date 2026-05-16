@@ -1,0 +1,13 @@
+Title: Checking each step in a worked solution
+chunk_id: ALG-WE-004
+corpus_version: v1.0
+topic: worked-solution error identification
+subskill: error analysis
+difficulty: medium
+resource_type: strategy_note
+misconception_tag: multi_step_error_analysis
+supports_tasks: WE-01, WE-02, WE-03, WE-04
+pedagogical_use: conceptual_prompt, procedural_hint
+
+Instructional content:
+To identify an error in a worked solution, compare each line with the line before it. Ask: What operation changed? Was it applied to every required term? Was the same operation done to both sides of an equation? Are only like terms being combined?

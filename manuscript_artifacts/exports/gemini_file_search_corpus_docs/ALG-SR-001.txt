@@ -1,0 +1,13 @@
+Title: Interpreting symbolic relationships
+chunk_id: ALG-SR-001
+corpus_version: v1.0
+topic: symbolic relationship interpretation
+subskill: meaning of variables and coefficients
+difficulty: medium
+resource_type: conceptual_explanation
+misconception_tag: coefficient_meaning_confusion
+supports_tasks: SR-01
+pedagogical_use: conceptual_prompt, worked_step_explanation
+
+Instructional content:
+A coefficient tells how many groups of a variable quantity are present. In an expression such as 3x, the 3 means three groups of x. It does not mean the variable is replaced by 3 unless the problem explicitly gives x = 3.

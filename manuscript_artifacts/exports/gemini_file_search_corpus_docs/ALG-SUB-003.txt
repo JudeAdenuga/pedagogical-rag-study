@@ -1,0 +1,13 @@
+Title: Substitution with subtraction
+chunk_id: ALG-SUB-003
+corpus_version: v1.0
+topic: substitution
+subskill: substitution with subtraction
+difficulty: easy
+resource_type: worked_example
+misconception_tag: subtraction_sign_error
+supports_tasks: SUB-03
+pedagogical_use: procedural_hint, misconception_correction
+
+Instructional content:
+When substituting into an expression with subtraction, keep the operation signs carefully. For 3p - q when p = 4 and q = 7, substitute to get 3(4) - 7. Compute 3(4) = 12, then 12 - 7 = 5.

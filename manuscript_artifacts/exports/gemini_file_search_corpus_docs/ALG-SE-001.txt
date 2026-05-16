@@ -1,0 +1,13 @@
+Title: Combining like terms with variables
+chunk_id: ALG-SE-001
+corpus_version: v1.0
+topic: simplifying expressions
+subskill: combining like terms
+difficulty: easy
+resource_type: conceptual_explanation
+misconception_tag: incorrect_coefficient_addition
+supports_tasks: SE-01
+pedagogical_use: conceptual_prompt, light_hint, misconception_correction
+
+Instructional content:
+Like terms have the same variable part raised to the same power. For example, 3x and 5x are like terms because both contain x. To combine them, add the coefficients: 3x + 5x = 8x. A constant term such as -2 does not combine with x-terms because it has no variable.

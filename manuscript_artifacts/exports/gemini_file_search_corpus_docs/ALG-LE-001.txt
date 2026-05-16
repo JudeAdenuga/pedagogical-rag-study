@@ -1,0 +1,13 @@
+Title: Inverse operations and isolating a variable
+chunk_id: ALG-LE-001
+corpus_version: v1.0
+topic: solving linear equations
+subskill: inverse operations
+difficulty: easy
+resource_type: conceptual_explanation
+misconception_tag: wrong_inverse_operation
+supports_tasks: LE-01, WE-01
+pedagogical_use: conceptual_prompt, light_hint, misconception_correction
+
+Instructional content:
+To solve an equation, use inverse operations to isolate the variable. Addition is undone by subtraction, and subtraction is undone by addition. In x + 7 = 15, subtract 7 from both sides because the goal is to undo the +7 attached to x.

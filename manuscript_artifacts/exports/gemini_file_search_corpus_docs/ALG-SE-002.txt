@@ -1,0 +1,13 @@
+Title: Why 3x plus 5x is not 6x
+chunk_id: ALG-SE-002
+corpus_version: v1.0
+topic: simplifying expressions
+subskill: combining like terms
+difficulty: easy
+resource_type: misconception_note
+misconception_tag: incorrect_coefficient_addition
+supports_tasks: SE-01
+pedagogical_use: misconception_correction
+
+Instructional content:
+A common error is adding 3x and 5x incorrectly. The coefficients 3 and 5 tell how many x-groups there are. Three x-groups plus five x-groups gives eight x-groups, so 3x + 5x = 8x, not 6x.

@@ -1,0 +1,13 @@
+Title: Variables on both sides
+chunk_id: ALG-LE-006
+corpus_version: v1.0
+topic: solving linear equations
+subskill: variables on both sides
+difficulty: medium
+resource_type: worked_example
+misconception_tag: balance_principle_confusion
+supports_tasks: LE-05
+pedagogical_use: procedural_hint, worked_step_explanation
+
+Instructional content:
+When variables appear on both sides, collect variable terms on one side and constants on the other while preserving equality. Example: 4n + 6 = 2n + 18. Subtract 2n from both sides to get 2n + 6 = 18. Then subtract 6 from both sides to get 2n = 12. Finally divide by 2, so n = 6.

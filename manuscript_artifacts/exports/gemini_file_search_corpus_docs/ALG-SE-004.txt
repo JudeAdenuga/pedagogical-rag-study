@@ -1,0 +1,13 @@
+Title: Distribution over subtraction
+chunk_id: ALG-SE-004
+corpus_version: v1.0
+topic: simplifying expressions
+subskill: distribution over subtraction
+difficulty: medium
+resource_type: conceptual_explanation
+misconception_tag: distribution_over_subtraction_confusion
+supports_tasks: SE-03
+pedagogical_use: conceptual_prompt, procedural_hint, worked_step_explanation
+
+Instructional content:
+The distributive property applies to every term inside the parentheses, including negative terms. In 3(x - 4), the expression x - 4 means x plus negative 4. So 3(x - 4) becomes 3x - 12 because 3 times -4 is -12.

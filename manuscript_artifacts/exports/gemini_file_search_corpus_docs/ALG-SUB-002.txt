@@ -1,0 +1,13 @@
+Title: Order of operations with exponents after substitution
+chunk_id: ALG-SUB-002
+corpus_version: v1.0
+topic: substitution
+subskill: order of operations with exponents
+difficulty: medium
+resource_type: worked_example
+misconception_tag: order_of_operations_error
+supports_tasks: SUB-02
+pedagogical_use: procedural_hint, misconception_correction, worked_step_explanation
+
+Instructional content:
+After substituting a value, follow the order of operations. Exponents are evaluated before subtraction. For a² - 4 when a = 5, substitute first to get 5² - 4. Then square 5 to get 25, and finally subtract 4 to get 21.

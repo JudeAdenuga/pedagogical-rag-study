@@ -1,0 +1,13 @@
+Title: Substitution with parentheses
+chunk_id: ALG-SUB-004
+corpus_version: v1.0
+topic: substitution
+subskill: substitution with parentheses
+difficulty: medium
+resource_type: conceptual_explanation
+misconception_tag: parentheses_or_partial_distribution_error
+supports_tasks: SUB-04
+pedagogical_use: conceptual_prompt, procedural_hint, misconception_correction
+
+Instructional content:
+Parentheses show that the expression inside should be treated as one group. For 2(x + y), substitute both values first: 2(3 + 6). Add inside the parentheses to get 2(9), then multiply to get 18.

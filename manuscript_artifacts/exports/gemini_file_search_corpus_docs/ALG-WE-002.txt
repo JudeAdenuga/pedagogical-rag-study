@@ -1,0 +1,13 @@
+Title: Every term inside parentheses must receive the multiplier
+chunk_id: ALG-WE-002
+corpus_version: v1.0
+topic: worked-solution error identification
+subskill: distributive property
+difficulty: easy
+resource_type: misconception_note
+misconception_tag: incomplete_distribution
+supports_tasks: WE-02, LE-04
+pedagogical_use: misconception_correction, worked_step_explanation
+
+Instructional content:
+When using the distributive property, the multiplier applies to every term inside the parentheses. For 3(x + 4), multiply 3 by x and also multiply 3 by 4. The result is 3x + 12, not 3x + 4.

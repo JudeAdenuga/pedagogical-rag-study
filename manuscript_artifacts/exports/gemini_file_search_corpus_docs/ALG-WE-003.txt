@@ -1,0 +1,13 @@
+Title: Combining unlike terms in worked solutions
+chunk_id: ALG-WE-003
+corpus_version: v1.0
+topic: worked-solution error identification
+subskill: like and unlike terms
+difficulty: easy
+resource_type: misconception_note
+misconception_tag: combining_unlike_terms
+supports_tasks: WE-03, SE-05
+pedagogical_use: misconception_correction
+
+Instructional content:
+A variable term and a constant term cannot be combined into one term. For example, 4x + 7 cannot become 11x because 7 is not an x-term. Only terms with the same variable part can be combined.
