@@ -1,0 +1,238 @@
+{
+  "retrieval_log_id": "retrieval_81d116624d6a4063bbcb1d80aa8dfca3",
+  "session_id": "rag_two_turn_SUB-01",
+  "task_id": "SUB-01",
+  "turn_number": 1,
+  "query_text": "Retrieve the most relevant algebra instructional evidence for this pedagogical RAG tutoring turn.\n\nTask ID: SUB-01\nTurn number: 1\nAlgebra category: Substitution\nTopic: substitution\nSubskill: multiplication notation in algebra\nOriginal student-facing task: Evaluate 2x + 5 when x = 3.\nCurrent learner message: Evaluate 2x + 5 when x = 3.\nSelected pedagogical response mode: worked_step_explanation\n\nPrioritize evidence that supports:\n- mathematically accurate explanation,\n- misconception correction where relevant,\n- stepwise tutoring support,\n- the selected pedagogical response mode.\n",
+  "retrieval_mode": "gemini_file_search_retrieval_probe",
+  "top_k": 5,
+  "metadata_filters": {},
+  "retrieved_chunks": [
+    {
+      "chunk_id": "ALG-SUB-001",
+      "title": "Substitution means replacing a variable with a value",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "Substitution means replacing a variable with the given value. In algebra, 2x means 2 times x, not the two-digit number formed by writing 2 next to x. If x = 3, then 2x + 5 becomes 2(3) + 5.",
+      "retrieval_excerpt": "Title: Substitution means replacing a variable with a value\nchunk_id: ALG-SUB-001\ncorpus_version: v1.0\ntopic: substitution\nsubskill: multiplication notation in algebra\ndifficulty: easy\nresource_type: conceptual_explanation\nmisconception_tag: concatenation_instead_of_multiplication\nsupports_tasks: SUB-01\npedagogical_use: conceptual_prompt, light_hint, misconception_correction\n\nInstructional content:\nSubstitution means replacing a variable with the given value. In algebra, 2x means 2 times x, not the two-digit number formed by writing 2 next to x. If x = 3, then 2x + 5 becomes 2(3) + 5.",
+      "metadata": {
+        "topic": "substitution",
+        "subskill": "multiplication notation in algebra",
+        "difficulty": "easy",
+        "resource_type": "conceptual_explanation",
+        "misconception_tag": "concatenation_instead_of_multiplication",
+        "supports_tasks": "SUB-01",
+        "pedagogical_use": "conceptual_prompt,light_hint,misconception_correction",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    },
+    {
+      "chunk_id": "ALG-SUB-004",
+      "title": "Substitution with parentheses",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "Parentheses show that the expression inside should be treated as one group. For 2(x + y), substitute both values first: 2(3 + 6). Add inside the parentheses to get 2(9), then multiply to get 18.",
+      "retrieval_excerpt": "Title: Substitution with parentheses\nchunk_id: ALG-SUB-004\ncorpus_version: v1.0\ntopic: substitution\nsubskill: substitution with parentheses\ndifficulty: medium\nresource_type: conceptual_explanation\nmisconception_tag: parentheses_or_partial_distribution_error\nsupports_tasks: SUB-04\npedagogical_use: conceptual_prompt, procedural_hint, misconception_correction\n\nInstructional content:\nParentheses show that the expression inside should be treated as one group. For 2(x + y), substitute both values first: 2(3 + 6). Add inside the parentheses to get 2(9), then multiply to get 18.",
+      "metadata": {
+        "topic": "substitution",
+        "subskill": "substitution with parentheses",
+        "difficulty": "medium",
+        "resource_type": "conceptual_explanation",
+        "misconception_tag": "parentheses_or_partial_distribution_error",
+        "supports_tasks": "SUB-04",
+        "pedagogical_use": "conceptual_prompt,procedural_hint,misconception_correction",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    },
+    {
+      "chunk_id": "ALG-SUB-003",
+      "title": "Substitution with subtraction",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "When substituting into an expression with subtraction, keep the operation signs carefully. For 3p - q when p = 4 and q = 7, substitute to get 3(4) - 7. Compute 3(4) = 12, then 12 - 7 = 5.",
+      "retrieval_excerpt": "Title: Substitution with subtraction\nchunk_id: ALG-SUB-003\ncorpus_version: v1.0\ntopic: substitution\nsubskill: substitution with subtraction\ndifficulty: easy\nresource_type: worked_example\nmisconception_tag: subtraction_sign_error\nsupports_tasks: SUB-03\npedagogical_use: procedural_hint, misconception_correction\n\nInstructional content:\nWhen substituting into an expression with subtraction, keep the operation signs carefully. For 3p - q when p = 4 and q = 7, substitute to get 3(4) - 7. Compute 3(4) = 12, then 12 - 7 = 5.",
+      "metadata": {
+        "topic": "substitution",
+        "subskill": "substitution with subtraction",
+        "difficulty": "easy",
+        "resource_type": "worked_example",
+        "misconception_tag": "subtraction_sign_error",
+        "supports_tasks": "SUB-03",
+        "pedagogical_use": "procedural_hint,misconception_correction",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    },
+    {
+      "chunk_id": "ALG-WE-001",
+      "title": "Correcting the move-across misconception",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "The phrase 'move it across and change the sign' can hide the real reasoning. A better explanation is inverse operations. In 2x + 5 = 17, the +5 is undone by subtracting 5 from both sides. This gives 2x = 12, then x = 6.",
+      "retrieval_excerpt": "Title: Correcting the move-across misconception\nchunk_id: ALG-WE-001\ncorpus_version: v1.0\ntopic: worked-solution error identification\nsubskill: inverse operations and balance principle\ndifficulty: medium\nresource_type: misconception_note\nmisconception_tag: move_across_sign_error\nsupports_tasks: WE-01\npedagogical_use: misconception_correction, worked_step_explanation\n\nInstructional content:\nThe phrase 'move it across and change the sign' can hide the real reasoning. A better explanation is inverse operations. In 2x + 5 = 17, the +5 is undone by subtracting 5 from both sides. This gives 2x = 12, then x = 6.",
+      "metadata": {
+        "topic": "worked-solution error identification",
+        "subskill": "inverse operations and balance principle",
+        "difficulty": "medium",
+        "resource_type": "misconception_note",
+        "misconception_tag": "move_across_sign_error",
+        "supports_tasks": "WE-01",
+        "pedagogical_use": "misconception_correction,worked_step_explanation",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    },
+    {
+      "chunk_id": "ALG-SUB-002",
+      "title": "Order of operations with exponents after substitution",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "After substituting a value, follow the order of operations. Exponents are evaluated before subtraction. For a² - 4 when a = 5, substitute first to get 5² - 4. Then square 5 to get 25, and finally subtract 4 to get 21.",
+      "retrieval_excerpt": "Title: Order of operations with exponents after substitution\nchunk_id: ALG-SUB-002\ncorpus_version: v1.0\ntopic: substitution\nsubskill: order of operations with exponents\ndifficulty: medium\nresource_type: worked_example\nmisconception_tag: order_of_operations_error\nsupports_tasks: SUB-02\npedagogical_use: procedural_hint, misconception_correction, worked_step_explanation\n\nInstructional content:\nAfter substituting a value, follow the order of operations. Exponents are evaluated before subtraction. For a² - 4 when a = 5, substitute first to get 5² - 4. Then square 5 to get 25, and finally subtract 4 to get 21.",
+      "metadata": {
+        "topic": "substitution",
+        "subskill": "order of operations with exponents",
+        "difficulty": "medium",
+        "resource_type": "worked_example",
+        "misconception_tag": "order_of_operations_error",
+        "supports_tasks": "SUB-02",
+        "pedagogical_use": "procedural_hint,misconception_correction,worked_step_explanation",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    }
+  ],
+  "created_at": "2026-05-17T10:12:16.776411+00:00",
+  "versioning": {
+    "retrieval_log_schema_version": "retrieval_log_v1.0",
+    "corpus_version": "algebra_corpus_v1.0",
+    "retrieval_metadata_version": "retrieval_metadata_v1.0"
+  },
+  "retrieval_probe": {
+    "retrieval_probe_id": "rag_retrieval_probe_a2c98ab531934d15a7821d09e509d947",
+    "rag_file_search_service_version": "rag_file_search_service_v1.0",
+    "store_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+    "retrieval_model": "gemini-2.5-flash",
+    "retrieval_probe_prompt": "Use the File Search store to retrieve the most relevant algebra instructional evidence for the request below.\n\nYou must rely on retrieved File Search evidence for this retrieval step.\nDo not solve the tutoring task.\nAfter retrieving evidence, reply with one brief sentence only:\n\"Retrieved relevant instructional evidence.\"\n\nRetrieval request:\nRetrieve the most relevant algebra instructional evidence for this pedagogical RAG tutoring turn.\n\nTask ID: SUB-01\nTurn number: 1\nAlgebra category: Substitution\nTopic: substitution\nSubskill: multiplication notation in algebra\nOriginal student-facing task: Evaluate 2x + 5 when x = 3.\nCurrent learner message: Evaluate 2x + 5 when x = 3.\nSelected pedagogical response mode: worked_step_explanation\n\nPrioritize evidence that supports:\n- mathematically accurate explanation,\n- misconception correction where relevant,\n- stepwise tutoring support,\n- the selected pedagogical response mode.\n\n",
+    "retrieval_probe_response_text": "Retrieved relevant instructional evidence.",
+    "retrieved_chunk_count": 5,
+    "retrieved_chunks": [
+      {
+        "chunk_id": "ALG-SUB-001",
+        "title": "Substitution means replacing a variable with a value",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "Substitution means replacing a variable with the given value. In algebra, 2x means 2 times x, not the two-digit number formed by writing 2 next to x. If x = 3, then 2x + 5 becomes 2(3) + 5.",
+        "retrieval_excerpt": "Title: Substitution means replacing a variable with a value\nchunk_id: ALG-SUB-001\ncorpus_version: v1.0\ntopic: substitution\nsubskill: multiplication notation in algebra\ndifficulty: easy\nresource_type: conceptual_explanation\nmisconception_tag: concatenation_instead_of_multiplication\nsupports_tasks: SUB-01\npedagogical_use: conceptual_prompt, light_hint, misconception_correction\n\nInstructional content:\nSubstitution means replacing a variable with the given value. In algebra, 2x means 2 times x, not the two-digit number formed by writing 2 next to x. If x = 3, then 2x + 5 becomes 2(3) + 5.",
+        "metadata": {
+          "topic": "substitution",
+          "subskill": "multiplication notation in algebra",
+          "difficulty": "easy",
+          "resource_type": "conceptual_explanation",
+          "misconception_tag": "concatenation_instead_of_multiplication",
+          "supports_tasks": "SUB-01",
+          "pedagogical_use": "conceptual_prompt,light_hint,misconception_correction",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      },
+      {
+        "chunk_id": "ALG-SUB-004",
+        "title": "Substitution with parentheses",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "Parentheses show that the expression inside should be treated as one group. For 2(x + y), substitute both values first: 2(3 + 6). Add inside the parentheses to get 2(9), then multiply to get 18.",
+        "retrieval_excerpt": "Title: Substitution with parentheses\nchunk_id: ALG-SUB-004\ncorpus_version: v1.0\ntopic: substitution\nsubskill: substitution with parentheses\ndifficulty: medium\nresource_type: conceptual_explanation\nmisconception_tag: parentheses_or_partial_distribution_error\nsupports_tasks: SUB-04\npedagogical_use: conceptual_prompt, procedural_hint, misconception_correction\n\nInstructional content:\nParentheses show that the expression inside should be treated as one group. For 2(x + y), substitute both values first: 2(3 + 6). Add inside the parentheses to get 2(9), then multiply to get 18.",
+        "metadata": {
+          "topic": "substitution",
+          "subskill": "substitution with parentheses",
+          "difficulty": "medium",
+          "resource_type": "conceptual_explanation",
+          "misconception_tag": "parentheses_or_partial_distribution_error",
+          "supports_tasks": "SUB-04",
+          "pedagogical_use": "conceptual_prompt,procedural_hint,misconception_correction",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      },
+      {
+        "chunk_id": "ALG-SUB-003",
+        "title": "Substitution with subtraction",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "When substituting into an expression with subtraction, keep the operation signs carefully. For 3p - q when p = 4 and q = 7, substitute to get 3(4) - 7. Compute 3(4) = 12, then 12 - 7 = 5.",
+        "retrieval_excerpt": "Title: Substitution with subtraction\nchunk_id: ALG-SUB-003\ncorpus_version: v1.0\ntopic: substitution\nsubskill: substitution with subtraction\ndifficulty: easy\nresource_type: worked_example\nmisconception_tag: subtraction_sign_error\nsupports_tasks: SUB-03\npedagogical_use: procedural_hint, misconception_correction\n\nInstructional content:\nWhen substituting into an expression with subtraction, keep the operation signs carefully. For 3p - q when p = 4 and q = 7, substitute to get 3(4) - 7. Compute 3(4) = 12, then 12 - 7 = 5.",
+        "metadata": {
+          "topic": "substitution",
+          "subskill": "substitution with subtraction",
+          "difficulty": "easy",
+          "resource_type": "worked_example",
+          "misconception_tag": "subtraction_sign_error",
+          "supports_tasks": "SUB-03",
+          "pedagogical_use": "procedural_hint,misconception_correction",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      },
+      {
+        "chunk_id": "ALG-WE-001",
+        "title": "Correcting the move-across misconception",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "The phrase 'move it across and change the sign' can hide the real reasoning. A better explanation is inverse operations. In 2x + 5 = 17, the +5 is undone by subtracting 5 from both sides. This gives 2x = 12, then x = 6.",
+        "retrieval_excerpt": "Title: Correcting the move-across misconception\nchunk_id: ALG-WE-001\ncorpus_version: v1.0\ntopic: worked-solution error identification\nsubskill: inverse operations and balance principle\ndifficulty: medium\nresource_type: misconception_note\nmisconception_tag: move_across_sign_error\nsupports_tasks: WE-01\npedagogical_use: misconception_correction, worked_step_explanation\n\nInstructional content:\nThe phrase 'move it across and change the sign' can hide the real reasoning. A better explanation is inverse operations. In 2x + 5 = 17, the +5 is undone by subtracting 5 from both sides. This gives 2x = 12, then x = 6.",
+        "metadata": {
+          "topic": "worked-solution error identification",
+          "subskill": "inverse operations and balance principle",
+          "difficulty": "medium",
+          "resource_type": "misconception_note",
+          "misconception_tag": "move_across_sign_error",
+          "supports_tasks": "WE-01",
+          "pedagogical_use": "misconception_correction,worked_step_explanation",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      },
+      {
+        "chunk_id": "ALG-SUB-002",
+        "title": "Order of operations with exponents after substitution",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "After substituting a value, follow the order of operations. Exponents are evaluated before subtraction. For a² - 4 when a = 5, substitute first to get 5² - 4. Then square 5 to get 25, and finally subtract 4 to get 21.",
+        "retrieval_excerpt": "Title: Order of operations with exponents after substitution\nchunk_id: ALG-SUB-002\ncorpus_version: v1.0\ntopic: substitution\nsubskill: order of operations with exponents\ndifficulty: medium\nresource_type: worked_example\nmisconception_tag: order_of_operations_error\nsupports_tasks: SUB-02\npedagogical_use: procedural_hint, misconception_correction, worked_step_explanation\n\nInstructional content:\nAfter substituting a value, follow the order of operations. Exponents are evaluated before subtraction. For a² - 4 when a = 5, substitute first to get 5² - 4. Then square 5 to get 25, and finally subtract 4 to get 21.",
+        "metadata": {
+          "topic": "substitution",
+          "subskill": "order of operations with exponents",
+          "difficulty": "medium",
+          "resource_type": "worked_example",
+          "misconception_tag": "order_of_operations_error",
+          "supports_tasks": "SUB-02",
+          "pedagogical_use": "procedural_hint,misconception_correction,worked_step_explanation",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      }
+    ],
+    "retrieval_attempts": [
+      {
+        "attempt_number": 1,
+        "response_text": "Retrieved relevant instructional evidence.",
+        "retrieved_chunk_count": 5,
+        "grounding_chunks_found": true
+      }
+    ],
+    "created_at": "2026-05-17T10:12:16.774173+00:00"
+  }
+}

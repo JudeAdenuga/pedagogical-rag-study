@@ -238,4 +238,4 @@ Research focus: educational AI, retrieval-augmented generation, learner-state-aw
 
 ## Project Title for Manuscript
 
-**Retrieval-Augmented Generation for Pedagogically Aware Educational AI: A Comparison of Baseline LLMs and Learner-State-Aware RAG**
+**Retrieval-Augmented Generation for Pedagogically Aware Educational AI: A Comparison of a Baseline LLM Tutor and a Learner-State-Aware RAG Tutor**

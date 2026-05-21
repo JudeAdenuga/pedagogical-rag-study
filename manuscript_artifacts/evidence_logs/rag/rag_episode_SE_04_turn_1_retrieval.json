@@ -1,5 +1,5 @@
 {
-  "retrieval_log_id": "retrieval_a4699b6c1b48445882c01a2509ffb90d",
+  "retrieval_log_id": "retrieval_8d4c0585780e4b06b2dc4cce929aa0fa",
   "session_id": "rag_two_turn_SE-04",
   "task_id": "SE-04",
   "turn_number": 1,
@@ -29,26 +29,6 @@
       }
     },
     {
-      "chunk_id": "ALG-SE-004",
-      "title": "Distribution over subtraction",
-      "score": "not_exposed_by_gemini_file_search",
-      "content": "The distributive property applies to every term inside the parentheses, including negative terms. In 3(x - 4), the expression x - 4 means x plus negative 4. So 3(x - 4) becomes 3x - 12 because 3 times -4 is -12.",
-      "retrieval_excerpt": "Title: Distribution over subtraction\nchunk_id: ALG-SE-004\ncorpus_version: v1.0\ntopic: simplifying expressions\nsubskill: distribution over subtraction\ndifficulty: medium\nresource_type: conceptual_explanation\nmisconception_tag: distribution_over_subtraction_confusion\nsupports_tasks: SE-03\npedagogical_use: conceptual_prompt, procedural_hint, worked_step_explanation\n\nInstructional content:\nThe distributive property applies to every term inside the parentheses, including negative terms. In 3(x - 4), the expression x - 4 means x plus negative 4. So 3(x - 4) becomes 3x - 12 because 3 times -4 is -12.",
-      "metadata": {
-        "topic": "simplifying expressions",
-        "subskill": "distribution over subtraction",
-        "difficulty": "medium",
-        "resource_type": "conceptual_explanation",
-        "misconception_tag": "distribution_over_subtraction_confusion",
-        "supports_tasks": "SE-03",
-        "pedagogical_use": "conceptual_prompt,procedural_hint,worked_step_explanation",
-        "retrieval_source": "gemini_file_search",
-        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
-        "uri": null,
-        "page_number": null
-      }
-    },
-    {
       "chunk_id": "ALG-LE-005",
       "title": "Distribution in equations",
       "score": "not_exposed_by_gemini_file_search",
@@ -62,26 +42,6 @@
         "misconception_tag": "incomplete_distribution",
         "supports_tasks": "LE-04",
         "pedagogical_use": "procedural_hint,misconception_correction,worked_step_explanation",
-        "retrieval_source": "gemini_file_search",
-        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
-        "uri": null,
-        "page_number": null
-      }
-    },
-    {
-      "chunk_id": "ALG-SR-002",
-      "title": "Understanding equivalent expressions",
-      "score": "not_exposed_by_gemini_file_search",
-      "content": "Equivalent expressions may look different but have the same value for every allowed value of the variable. For example, 2(x + y) and 2x + 2y are equivalent because distributing 2 gives the same total.",
-      "retrieval_excerpt": "Title: Understanding equivalent expressions\nchunk_id: ALG-SR-002\ncorpus_version: v1.0\ntopic: symbolic relationship interpretation\nsubskill: equivalent expressions\ndifficulty: medium\nresource_type: conceptual_explanation\nmisconception_tag: equivalence_confusion\nsupports_tasks: SR-02, SUB-04, SE-02\npedagogical_use: conceptual_prompt, procedural_hint, worked_step_explanation\n\nInstructional content:\nEquivalent expressions may look different but have the same value for every allowed value of the variable. For example, 2(x + y) and 2x + 2y are equivalent because distributing 2 gives the same total.",
-      "metadata": {
-        "topic": "symbolic relationship interpretation",
-        "subskill": "equivalent expressions",
-        "difficulty": "medium",
-        "resource_type": "conceptual_explanation",
-        "misconception_tag": "equivalence_confusion",
-        "supports_tasks": "SR-02,SUB-04,SE-02",
-        "pedagogical_use": "conceptual_prompt,procedural_hint,worked_step_explanation",
         "retrieval_source": "gemini_file_search",
         "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
         "uri": null,
@@ -107,16 +67,56 @@
         "uri": null,
         "page_number": null
       }
+    },
+    {
+      "chunk_id": "ALG-SE-004",
+      "title": "Distribution over subtraction",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "The distributive property applies to every term inside the parentheses, including negative terms. In 3(x - 4), the expression x - 4 means x plus negative 4. So 3(x - 4) becomes 3x - 12 because 3 times -4 is -12.",
+      "retrieval_excerpt": "Title: Distribution over subtraction\nchunk_id: ALG-SE-004\ncorpus_version: v1.0\ntopic: simplifying expressions\nsubskill: distribution over subtraction\ndifficulty: medium\nresource_type: conceptual_explanation\nmisconception_tag: distribution_over_subtraction_confusion\nsupports_tasks: SE-03\npedagogical_use: conceptual_prompt, procedural_hint, worked_step_explanation\n\nInstructional content:\nThe distributive property applies to every term inside the parentheses, including negative terms. In 3(x - 4), the expression x - 4 means x plus negative 4. So 3(x - 4) becomes 3x - 12 because 3 times -4 is -12.",
+      "metadata": {
+        "topic": "simplifying expressions",
+        "subskill": "distribution over subtraction",
+        "difficulty": "medium",
+        "resource_type": "conceptual_explanation",
+        "misconception_tag": "distribution_over_subtraction_confusion",
+        "supports_tasks": "SE-03",
+        "pedagogical_use": "conceptual_prompt,procedural_hint,worked_step_explanation",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    },
+    {
+      "chunk_id": "ALG-SR-002",
+      "title": "Understanding equivalent expressions",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "Equivalent expressions may look different but have the same value for every allowed value of the variable. For example, 2(x + y) and 2x + 2y are equivalent because distributing 2 gives the same total.",
+      "retrieval_excerpt": "Title: Understanding equivalent expressions\nchunk_id: ALG-SR-002\ncorpus_version: v1.0\ntopic: symbolic relationship interpretation\nsubskill: equivalent expressions\ndifficulty: medium\nresource_type: conceptual_explanation\nmisconception_tag: equivalence_confusion\nsupports_tasks: SR-02, SUB-04, SE-02\npedagogical_use: conceptual_prompt, procedural_hint, worked_step_explanation\n\nInstructional content:\nEquivalent expressions may look different but have the same value for every allowed value of the variable. For example, 2(x + y) and 2x + 2y are equivalent because distributing 2 gives the same total.",
+      "metadata": {
+        "topic": "symbolic relationship interpretation",
+        "subskill": "equivalent expressions",
+        "difficulty": "medium",
+        "resource_type": "conceptual_explanation",
+        "misconception_tag": "equivalence_confusion",
+        "supports_tasks": "SR-02,SUB-04,SE-02",
+        "pedagogical_use": "conceptual_prompt,procedural_hint,worked_step_explanation",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
     }
   ],
-  "created_at": "2026-05-16T02:05:51.616098+00:00",
+  "created_at": "2026-05-16T07:02:05.849171+00:00",
   "versioning": {
     "retrieval_log_schema_version": "retrieval_log_v1.0",
     "corpus_version": "algebra_corpus_v1.0",
     "retrieval_metadata_version": "retrieval_metadata_v1.0"
   },
   "retrieval_probe": {
-    "retrieval_probe_id": "rag_retrieval_probe_40c2c596c3bf4a3ab70cd4266363dd84",
+    "retrieval_probe_id": "rag_retrieval_probe_6f994170fd8c4665a8902164b736e950",
     "rag_file_search_service_version": "rag_file_search_service_v1.0",
     "store_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
     "retrieval_model": "gemini-2.5-flash",
@@ -145,26 +145,6 @@
         }
       },
       {
-        "chunk_id": "ALG-SE-004",
-        "title": "Distribution over subtraction",
-        "score": "not_exposed_by_gemini_file_search",
-        "content": "The distributive property applies to every term inside the parentheses, including negative terms. In 3(x - 4), the expression x - 4 means x plus negative 4. So 3(x - 4) becomes 3x - 12 because 3 times -4 is -12.",
-        "retrieval_excerpt": "Title: Distribution over subtraction\nchunk_id: ALG-SE-004\ncorpus_version: v1.0\ntopic: simplifying expressions\nsubskill: distribution over subtraction\ndifficulty: medium\nresource_type: conceptual_explanation\nmisconception_tag: distribution_over_subtraction_confusion\nsupports_tasks: SE-03\npedagogical_use: conceptual_prompt, procedural_hint, worked_step_explanation\n\nInstructional content:\nThe distributive property applies to every term inside the parentheses, including negative terms. In 3(x - 4), the expression x - 4 means x plus negative 4. So 3(x - 4) becomes 3x - 12 because 3 times -4 is -12.",
-        "metadata": {
-          "topic": "simplifying expressions",
-          "subskill": "distribution over subtraction",
-          "difficulty": "medium",
-          "resource_type": "conceptual_explanation",
-          "misconception_tag": "distribution_over_subtraction_confusion",
-          "supports_tasks": "SE-03",
-          "pedagogical_use": "conceptual_prompt,procedural_hint,worked_step_explanation",
-          "retrieval_source": "gemini_file_search",
-          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
-          "uri": null,
-          "page_number": null
-        }
-      },
-      {
         "chunk_id": "ALG-LE-005",
         "title": "Distribution in equations",
         "score": "not_exposed_by_gemini_file_search",
@@ -178,26 +158,6 @@
           "misconception_tag": "incomplete_distribution",
           "supports_tasks": "LE-04",
           "pedagogical_use": "procedural_hint,misconception_correction,worked_step_explanation",
-          "retrieval_source": "gemini_file_search",
-          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
-          "uri": null,
-          "page_number": null
-        }
-      },
-      {
-        "chunk_id": "ALG-SR-002",
-        "title": "Understanding equivalent expressions",
-        "score": "not_exposed_by_gemini_file_search",
-        "content": "Equivalent expressions may look different but have the same value for every allowed value of the variable. For example, 2(x + y) and 2x + 2y are equivalent because distributing 2 gives the same total.",
-        "retrieval_excerpt": "Title: Understanding equivalent expressions\nchunk_id: ALG-SR-002\ncorpus_version: v1.0\ntopic: symbolic relationship interpretation\nsubskill: equivalent expressions\ndifficulty: medium\nresource_type: conceptual_explanation\nmisconception_tag: equivalence_confusion\nsupports_tasks: SR-02, SUB-04, SE-02\npedagogical_use: conceptual_prompt, procedural_hint, worked_step_explanation\n\nInstructional content:\nEquivalent expressions may look different but have the same value for every allowed value of the variable. For example, 2(x + y) and 2x + 2y are equivalent because distributing 2 gives the same total.",
-        "metadata": {
-          "topic": "symbolic relationship interpretation",
-          "subskill": "equivalent expressions",
-          "difficulty": "medium",
-          "resource_type": "conceptual_explanation",
-          "misconception_tag": "equivalence_confusion",
-          "supports_tasks": "SR-02,SUB-04,SE-02",
-          "pedagogical_use": "conceptual_prompt,procedural_hint,worked_step_explanation",
           "retrieval_source": "gemini_file_search",
           "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
           "uri": null,
@@ -223,6 +183,46 @@
           "uri": null,
           "page_number": null
         }
+      },
+      {
+        "chunk_id": "ALG-SE-004",
+        "title": "Distribution over subtraction",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "The distributive property applies to every term inside the parentheses, including negative terms. In 3(x - 4), the expression x - 4 means x plus negative 4. So 3(x - 4) becomes 3x - 12 because 3 times -4 is -12.",
+        "retrieval_excerpt": "Title: Distribution over subtraction\nchunk_id: ALG-SE-004\ncorpus_version: v1.0\ntopic: simplifying expressions\nsubskill: distribution over subtraction\ndifficulty: medium\nresource_type: conceptual_explanation\nmisconception_tag: distribution_over_subtraction_confusion\nsupports_tasks: SE-03\npedagogical_use: conceptual_prompt, procedural_hint, worked_step_explanation\n\nInstructional content:\nThe distributive property applies to every term inside the parentheses, including negative terms. In 3(x - 4), the expression x - 4 means x plus negative 4. So 3(x - 4) becomes 3x - 12 because 3 times -4 is -12.",
+        "metadata": {
+          "topic": "simplifying expressions",
+          "subskill": "distribution over subtraction",
+          "difficulty": "medium",
+          "resource_type": "conceptual_explanation",
+          "misconception_tag": "distribution_over_subtraction_confusion",
+          "supports_tasks": "SE-03",
+          "pedagogical_use": "conceptual_prompt,procedural_hint,worked_step_explanation",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      },
+      {
+        "chunk_id": "ALG-SR-002",
+        "title": "Understanding equivalent expressions",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "Equivalent expressions may look different but have the same value for every allowed value of the variable. For example, 2(x + y) and 2x + 2y are equivalent because distributing 2 gives the same total.",
+        "retrieval_excerpt": "Title: Understanding equivalent expressions\nchunk_id: ALG-SR-002\ncorpus_version: v1.0\ntopic: symbolic relationship interpretation\nsubskill: equivalent expressions\ndifficulty: medium\nresource_type: conceptual_explanation\nmisconception_tag: equivalence_confusion\nsupports_tasks: SR-02, SUB-04, SE-02\npedagogical_use: conceptual_prompt, procedural_hint, worked_step_explanation\n\nInstructional content:\nEquivalent expressions may look different but have the same value for every allowed value of the variable. For example, 2(x + y) and 2x + 2y are equivalent because distributing 2 gives the same total.",
+        "metadata": {
+          "topic": "symbolic relationship interpretation",
+          "subskill": "equivalent expressions",
+          "difficulty": "medium",
+          "resource_type": "conceptual_explanation",
+          "misconception_tag": "equivalence_confusion",
+          "supports_tasks": "SR-02,SUB-04,SE-02",
+          "pedagogical_use": "conceptual_prompt,procedural_hint,worked_step_explanation",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
       }
     ],
     "retrieval_attempts": [
@@ -233,6 +233,6 @@
         "grounding_chunks_found": true
       }
     ],
-    "created_at": "2026-05-16T02:05:51.613847+00:00"
+    "created_at": "2026-05-16T07:02:05.847165+00:00"
   }
 }

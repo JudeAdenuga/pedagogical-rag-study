@@ -1,0 +1,238 @@
+{
+  "retrieval_log_id": "retrieval_aa8ce32d1e8942ed9b1842fc45bcb124",
+  "session_id": "rag_two_turn_CP-01",
+  "task_id": "CP-01",
+  "turn_number": 1,
+  "query_text": "Retrieve the most relevant algebra instructional evidence for this pedagogical RAG tutoring turn.\n\nTask ID: CP-01\nTurn number: 1\nAlgebra category: Short conceptual prompt\nTopic: short conceptual prompt\nSubskill: balance principle\nOriginal student-facing task: Explain why doing the same operation to both sides of an equation keeps the equation balanced.\nCurrent learner message: Explain why doing the same operation to both sides of an equation keeps the equation balanced.\nSelected pedagogical response mode: worked_step_explanation\n\nPrioritize evidence that supports:\n- mathematically accurate explanation,\n- misconception correction where relevant,\n- stepwise tutoring support,\n- the selected pedagogical response mode.\n",
+  "retrieval_mode": "gemini_file_search_retrieval_probe",
+  "top_k": 5,
+  "metadata_filters": {},
+  "retrieved_chunks": [
+    {
+      "chunk_id": "ALG-LE-002",
+      "title": "Balance principle in equations",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "An equation stays true only when the same operation is performed on both sides. This is called preserving equality. If you subtract 2n from one side, you must subtract 2n from the other side too. The goal is to keep the equation balanced while moving toward isolating the variable.",
+      "retrieval_excerpt": "Title: Balance principle in equations\nchunk_id: ALG-LE-002\ncorpus_version: v1.0\ntopic: solving linear equations\nsubskill: inverse operations and balance principle\ndifficulty: medium\nresource_type: conceptual_explanation\nmisconception_tag: balance_principle_confusion\nsupports_tasks: LE-01, LE-05, WE-01\npedagogical_use: conceptual_prompt, misconception_correction, worked_step_explanation\n\nInstructional content:\nAn equation stays true only when the same operation is performed on both sides. This is called preserving equality. If you subtract 2n from one side, you must subtract 2n from the other side too. The goal is to keep the equation balanced while moving toward isolating the variable.",
+      "metadata": {
+        "topic": "solving linear equations",
+        "subskill": "inverse operations and balance principle",
+        "difficulty": "medium",
+        "resource_type": "conceptual_explanation",
+        "misconception_tag": "balance_principle_confusion",
+        "supports_tasks": "LE-01,LE-05,WE-01",
+        "pedagogical_use": "conceptual_prompt,misconception_correction,worked_step_explanation",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    },
+    {
+      "chunk_id": "ALG-WE-001",
+      "title": "Correcting the move-across misconception",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "The phrase 'move it across and change the sign' can hide the real reasoning. A better explanation is inverse operations. In 2x + 5 = 17, the +5 is undone by subtracting 5 from both sides. This gives 2x = 12, then x = 6.",
+      "retrieval_excerpt": "Title: Correcting the move-across misconception\nchunk_id: ALG-WE-001\ncorpus_version: v1.0\ntopic: worked-solution error identification\nsubskill: inverse operations and balance principle\ndifficulty: medium\nresource_type: misconception_note\nmisconception_tag: move_across_sign_error\nsupports_tasks: WE-01\npedagogical_use: misconception_correction, worked_step_explanation\n\nInstructional content:\nThe phrase 'move it across and change the sign' can hide the real reasoning. A better explanation is inverse operations. In 2x + 5 = 17, the +5 is undone by subtracting 5 from both sides. This gives 2x = 12, then x = 6.",
+      "metadata": {
+        "topic": "worked-solution error identification",
+        "subskill": "inverse operations and balance principle",
+        "difficulty": "medium",
+        "resource_type": "misconception_note",
+        "misconception_tag": "move_across_sign_error",
+        "supports_tasks": "WE-01",
+        "pedagogical_use": "misconception_correction,worked_step_explanation",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    },
+    {
+      "chunk_id": "ALG-CP-002",
+      "title": "Guiding question for solving equations",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "When solving an equation, ask: What operation is currently being done to the variable, and what inverse operation will undo it while keeping both sides balanced?",
+      "retrieval_excerpt": "Title: Guiding question for solving equations\nchunk_id: ALG-CP-002\ncorpus_version: v1.0\ntopic: short conceptual prompt\nsubskill: inverse operations\ndifficulty: easy\nresource_type: guided_question\nmisconception_tag: wrong_inverse_operation\nsupports_tasks: CP-02, LE-01, LE-02\npedagogical_use: conceptual_prompt, light_hint\n\nInstructional content:\nWhen solving an equation, ask: What operation is currently being done to the variable, and what inverse operation will undo it while keeping both sides balanced?",
+      "metadata": {
+        "topic": "short conceptual prompt",
+        "subskill": "inverse operations",
+        "difficulty": "easy",
+        "resource_type": "guided_question",
+        "misconception_tag": "wrong_inverse_operation",
+        "supports_tasks": "CP-02,LE-01,LE-02",
+        "pedagogical_use": "conceptual_prompt,light_hint",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    },
+    {
+      "chunk_id": "ALG-LE-001",
+      "title": "Inverse operations and isolating a variable",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "To solve an equation, use inverse operations to isolate the variable. Addition is undone by subtraction, and subtraction is undone by addition. In x + 7 = 15, subtract 7 from both sides because the goal is to undo the +7 attached to x.",
+      "retrieval_excerpt": "Title: Inverse operations and isolating a variable\nchunk_id: ALG-LE-001\ncorpus_version: v1.0\ntopic: solving linear equations\nsubskill: inverse operations\ndifficulty: easy\nresource_type: conceptual_explanation\nmisconception_tag: wrong_inverse_operation\nsupports_tasks: LE-01, WE-01\npedagogical_use: conceptual_prompt, light_hint, misconception_correction\n\nInstructional content:\nTo solve an equation, use inverse operations to isolate the variable. Addition is undone by subtraction, and subtraction is undone by addition. In x + 7 = 15, subtract 7 from both sides because the goal is to undo the +7 attached to x.",
+      "metadata": {
+        "topic": "solving linear equations",
+        "subskill": "inverse operations",
+        "difficulty": "easy",
+        "resource_type": "conceptual_explanation",
+        "misconception_tag": "wrong_inverse_operation",
+        "supports_tasks": "LE-01,WE-01",
+        "pedagogical_use": "conceptual_prompt,light_hint,misconception_correction",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    },
+    {
+      "chunk_id": "ALG-LE-006",
+      "title": "Variables on both sides",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "When variables appear on both sides, collect variable terms on one side and constants on the other while preserving equality. Example: 4n + 6 = 2n + 18. Subtract 2n from both sides to get 2n + 6 = 18. Then subtract 6 from both sides to get 2n = 12. Finally divide by 2, so n = 6.",
+      "retrieval_excerpt": "Title: Variables on both sides\nchunk_id: ALG-LE-006\ncorpus_version: v1.0\ntopic: solving linear equations\nsubskill: variables on both sides\ndifficulty: medium\nresource_type: worked_example\nmisconception_tag: balance_principle_confusion\nsupports_tasks: LE-05\npedagogical_use: procedural_hint, worked_step_explanation\n\nInstructional content:\nWhen variables appear on both sides, collect variable terms on one side and constants on the other while preserving equality. Example: 4n + 6 = 2n + 18. Subtract 2n from both sides to get 2n + 6 = 18. Then subtract 6 from both sides to get 2n = 12. Finally divide by 2, so n = 6.",
+      "metadata": {
+        "topic": "solving linear equations",
+        "subskill": "variables on both sides",
+        "difficulty": "medium",
+        "resource_type": "worked_example",
+        "misconception_tag": "balance_principle_confusion",
+        "supports_tasks": "LE-05",
+        "pedagogical_use": "procedural_hint,worked_step_explanation",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    }
+  ],
+  "created_at": "2026-05-20T07:06:02.461446+00:00",
+  "versioning": {
+    "retrieval_log_schema_version": "retrieval_log_v1.0",
+    "corpus_version": "algebra_corpus_v1.0",
+    "retrieval_metadata_version": "retrieval_metadata_v1.0"
+  },
+  "retrieval_probe": {
+    "retrieval_probe_id": "rag_retrieval_probe_d5af831e3ad041559b9b1cda8f4c3ac8",
+    "rag_file_search_service_version": "rag_file_search_service_v1.0",
+    "store_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+    "retrieval_model": "gemini-2.5-flash",
+    "retrieval_probe_prompt": "Use the File Search store to retrieve the most relevant algebra instructional evidence for the request below.\n\nYou must rely on retrieved File Search evidence for this retrieval step.\nDo not solve the tutoring task.\nAfter retrieving evidence, reply with one brief sentence only:\n\"Retrieved relevant instructional evidence.\"\n\nRetrieval request:\nRetrieve the most relevant algebra instructional evidence for this pedagogical RAG tutoring turn.\n\nTask ID: CP-01\nTurn number: 1\nAlgebra category: Short conceptual prompt\nTopic: short conceptual prompt\nSubskill: balance principle\nOriginal student-facing task: Explain why doing the same operation to both sides of an equation keeps the equation balanced.\nCurrent learner message: Explain why doing the same operation to both sides of an equation keeps the equation balanced.\nSelected pedagogical response mode: worked_step_explanation\n\nPrioritize evidence that supports:\n- mathematically accurate explanation,\n- misconception correction where relevant,\n- stepwise tutoring support,\n- the selected pedagogical response mode.\n\n",
+    "retrieval_probe_response_text": "Retrieved relevant instructional evidence.",
+    "retrieved_chunk_count": 5,
+    "retrieved_chunks": [
+      {
+        "chunk_id": "ALG-LE-002",
+        "title": "Balance principle in equations",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "An equation stays true only when the same operation is performed on both sides. This is called preserving equality. If you subtract 2n from one side, you must subtract 2n from the other side too. The goal is to keep the equation balanced while moving toward isolating the variable.",
+        "retrieval_excerpt": "Title: Balance principle in equations\nchunk_id: ALG-LE-002\ncorpus_version: v1.0\ntopic: solving linear equations\nsubskill: inverse operations and balance principle\ndifficulty: medium\nresource_type: conceptual_explanation\nmisconception_tag: balance_principle_confusion\nsupports_tasks: LE-01, LE-05, WE-01\npedagogical_use: conceptual_prompt, misconception_correction, worked_step_explanation\n\nInstructional content:\nAn equation stays true only when the same operation is performed on both sides. This is called preserving equality. If you subtract 2n from one side, you must subtract 2n from the other side too. The goal is to keep the equation balanced while moving toward isolating the variable.",
+        "metadata": {
+          "topic": "solving linear equations",
+          "subskill": "inverse operations and balance principle",
+          "difficulty": "medium",
+          "resource_type": "conceptual_explanation",
+          "misconception_tag": "balance_principle_confusion",
+          "supports_tasks": "LE-01,LE-05,WE-01",
+          "pedagogical_use": "conceptual_prompt,misconception_correction,worked_step_explanation",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      },
+      {
+        "chunk_id": "ALG-WE-001",
+        "title": "Correcting the move-across misconception",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "The phrase 'move it across and change the sign' can hide the real reasoning. A better explanation is inverse operations. In 2x + 5 = 17, the +5 is undone by subtracting 5 from both sides. This gives 2x = 12, then x = 6.",
+        "retrieval_excerpt": "Title: Correcting the move-across misconception\nchunk_id: ALG-WE-001\ncorpus_version: v1.0\ntopic: worked-solution error identification\nsubskill: inverse operations and balance principle\ndifficulty: medium\nresource_type: misconception_note\nmisconception_tag: move_across_sign_error\nsupports_tasks: WE-01\npedagogical_use: misconception_correction, worked_step_explanation\n\nInstructional content:\nThe phrase 'move it across and change the sign' can hide the real reasoning. A better explanation is inverse operations. In 2x + 5 = 17, the +5 is undone by subtracting 5 from both sides. This gives 2x = 12, then x = 6.",
+        "metadata": {
+          "topic": "worked-solution error identification",
+          "subskill": "inverse operations and balance principle",
+          "difficulty": "medium",
+          "resource_type": "misconception_note",
+          "misconception_tag": "move_across_sign_error",
+          "supports_tasks": "WE-01",
+          "pedagogical_use": "misconception_correction,worked_step_explanation",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      },
+      {
+        "chunk_id": "ALG-CP-002",
+        "title": "Guiding question for solving equations",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "When solving an equation, ask: What operation is currently being done to the variable, and what inverse operation will undo it while keeping both sides balanced?",
+        "retrieval_excerpt": "Title: Guiding question for solving equations\nchunk_id: ALG-CP-002\ncorpus_version: v1.0\ntopic: short conceptual prompt\nsubskill: inverse operations\ndifficulty: easy\nresource_type: guided_question\nmisconception_tag: wrong_inverse_operation\nsupports_tasks: CP-02, LE-01, LE-02\npedagogical_use: conceptual_prompt, light_hint\n\nInstructional content:\nWhen solving an equation, ask: What operation is currently being done to the variable, and what inverse operation will undo it while keeping both sides balanced?",
+        "metadata": {
+          "topic": "short conceptual prompt",
+          "subskill": "inverse operations",
+          "difficulty": "easy",
+          "resource_type": "guided_question",
+          "misconception_tag": "wrong_inverse_operation",
+          "supports_tasks": "CP-02,LE-01,LE-02",
+          "pedagogical_use": "conceptual_prompt,light_hint",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      },
+      {
+        "chunk_id": "ALG-LE-001",
+        "title": "Inverse operations and isolating a variable",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "To solve an equation, use inverse operations to isolate the variable. Addition is undone by subtraction, and subtraction is undone by addition. In x + 7 = 15, subtract 7 from both sides because the goal is to undo the +7 attached to x.",
+        "retrieval_excerpt": "Title: Inverse operations and isolating a variable\nchunk_id: ALG-LE-001\ncorpus_version: v1.0\ntopic: solving linear equations\nsubskill: inverse operations\ndifficulty: easy\nresource_type: conceptual_explanation\nmisconception_tag: wrong_inverse_operation\nsupports_tasks: LE-01, WE-01\npedagogical_use: conceptual_prompt, light_hint, misconception_correction\n\nInstructional content:\nTo solve an equation, use inverse operations to isolate the variable. Addition is undone by subtraction, and subtraction is undone by addition. In x + 7 = 15, subtract 7 from both sides because the goal is to undo the +7 attached to x.",
+        "metadata": {
+          "topic": "solving linear equations",
+          "subskill": "inverse operations",
+          "difficulty": "easy",
+          "resource_type": "conceptual_explanation",
+          "misconception_tag": "wrong_inverse_operation",
+          "supports_tasks": "LE-01,WE-01",
+          "pedagogical_use": "conceptual_prompt,light_hint,misconception_correction",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      },
+      {
+        "chunk_id": "ALG-LE-006",
+        "title": "Variables on both sides",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "When variables appear on both sides, collect variable terms on one side and constants on the other while preserving equality. Example: 4n + 6 = 2n + 18. Subtract 2n from both sides to get 2n + 6 = 18. Then subtract 6 from both sides to get 2n = 12. Finally divide by 2, so n = 6.",
+        "retrieval_excerpt": "Title: Variables on both sides\nchunk_id: ALG-LE-006\ncorpus_version: v1.0\ntopic: solving linear equations\nsubskill: variables on both sides\ndifficulty: medium\nresource_type: worked_example\nmisconception_tag: balance_principle_confusion\nsupports_tasks: LE-05\npedagogical_use: procedural_hint, worked_step_explanation\n\nInstructional content:\nWhen variables appear on both sides, collect variable terms on one side and constants on the other while preserving equality. Example: 4n + 6 = 2n + 18. Subtract 2n from both sides to get 2n + 6 = 18. Then subtract 6 from both sides to get 2n = 12. Finally divide by 2, so n = 6.",
+        "metadata": {
+          "topic": "solving linear equations",
+          "subskill": "variables on both sides",
+          "difficulty": "medium",
+          "resource_type": "worked_example",
+          "misconception_tag": "balance_principle_confusion",
+          "supports_tasks": "LE-05",
+          "pedagogical_use": "procedural_hint,worked_step_explanation",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      }
+    ],
+    "retrieval_attempts": [
+      {
+        "attempt_number": 1,
+        "response_text": "Retrieved relevant instructional evidence.",
+        "retrieved_chunk_count": 5,
+        "grounding_chunks_found": true
+      }
+    ],
+    "created_at": "2026-05-20T07:06:02.459404+00:00"
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "retrieval_log_id": "retrieval_bc49a295999b4bfc8950a09d5338dd8e",
+  "session_id": "rag_two_turn_LE-03",
+  "task_id": "LE-03",
+  "turn_number": 2,
+  "query_text": "Retrieve the most relevant algebra instructional evidence for this pedagogical RAG tutoring turn.\n\nTask ID: LE-03\nTurn number: 2\nAlgebra category: Solving linear equations\nTopic: solving linear equations\nSubskill: two-step equations\nOriginal student-facing task: Solve for y: 5y - 4 = 21.\nCurrent learner message: Student says: \"I got y = 17.\"\nSelected pedagogical response mode: misconception_correction\n\nPrioritize evidence that supports:\n- mathematically accurate explanation,\n- misconception correction where relevant,\n- stepwise tutoring support,\n- the selected pedagogical response mode.\n",
+  "retrieval_mode": "gemini_file_search_retrieval_probe",
+  "top_k": 5,
+  "metadata_filters": {},
+  "retrieved_chunks": [
+    {
+      "chunk_id": "ALG-WE-001",
+      "title": "Correcting the move-across misconception",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "The phrase 'move it across and change the sign' can hide the real reasoning. A better explanation is inverse operations. In 2x + 5 = 17, the +5 is undone by subtracting 5 from both sides. This gives 2x = 12, then x = 6.",
+      "retrieval_excerpt": "Title: Correcting the move-across misconception\nchunk_id: ALG-WE-001\ncorpus_version: v1.0\ntopic: worked-solution error identification\nsubskill: inverse operations and balance principle\ndifficulty: medium\nresource_type: misconception_note\nmisconception_tag: move_across_sign_error\nsupports_tasks: WE-01\npedagogical_use: misconception_correction, worked_step_explanation\n\nInstructional content:\nThe phrase 'move it across and change the sign' can hide the real reasoning. A better explanation is inverse operations. In 2x + 5 = 17, the +5 is undone by subtracting 5 from both sides. This gives 2x = 12, then x = 6.",
+      "metadata": {
+        "topic": "worked-solution error identification",
+        "subskill": "inverse operations and balance principle",
+        "difficulty": "medium",
+        "resource_type": "misconception_note",
+        "misconception_tag": "move_across_sign_error",
+        "supports_tasks": "WE-01",
+        "pedagogical_use": "misconception_correction,worked_step_explanation",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    },
+    {
+      "chunk_id": "ALG-LE-004",
+      "title": "Why not divide too early in a two-step equation",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "A common mistake in 2x + 3 = 11 is dividing 11 by 2 before handling the +3. The expression on the left is not only 2x; it is 2x + 3. First undo the +3, then divide by 2.",
+      "retrieval_excerpt": "Title: Why not divide too early in a two-step equation\nchunk_id: ALG-LE-004\ncorpus_version: v1.0\ntopic: solving linear equations\nsubskill: two-step equations\ndifficulty: medium\nresource_type: misconception_note\nmisconception_tag: incorrect_order_of_inverse_operations\nsupports_tasks: LE-02\npedagogical_use: misconception_correction\n\nInstructional content:\nA common mistake in 2x + 3 = 11 is dividing 11 by 2 before handling the +3. The expression on the left is not only 2x; it is 2x + 3. First undo the +3, then divide by 2.",
+      "metadata": {
+        "topic": "solving linear equations",
+        "subskill": "two-step equations",
+        "difficulty": "medium",
+        "resource_type": "misconception_note",
+        "misconception_tag": "incorrect_order_of_inverse_operations",
+        "supports_tasks": "LE-02",
+        "pedagogical_use": "misconception_correction",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    },
+    {
+      "chunk_id": "ALG-LE-003",
+      "title": "Solving two-step equations",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "For a two-step equation such as 2x + 3 = 11, first undo addition or subtraction, then undo multiplication or division. Subtract 3 from both sides to get 2x = 8. Then divide both sides by 2 to get x = 4.",
+      "retrieval_excerpt": "Title: Solving two-step equations\nchunk_id: ALG-LE-003\ncorpus_version: v1.0\ntopic: solving linear equations\nsubskill: two-step equations\ndifficulty: medium\nresource_type: worked_example\nmisconception_tag: incorrect_order_of_inverse_operations\nsupports_tasks: LE-02, LE-03\npedagogical_use: procedural_hint, worked_step_explanation\n\nInstructional content:\nFor a two-step equation such as 2x + 3 = 11, first undo addition or subtraction, then undo multiplication or division. Subtract 3 from both sides to get 2x = 8. Then divide both sides by 2 to get x = 4.",
+      "metadata": {
+        "topic": "solving linear equations",
+        "subskill": "two-step equations",
+        "difficulty": "medium",
+        "resource_type": "worked_example",
+        "misconception_tag": "incorrect_order_of_inverse_operations",
+        "supports_tasks": "LE-02,LE-03",
+        "pedagogical_use": "procedural_hint,worked_step_explanation",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    },
+    {
+      "chunk_id": "ALG-LE-001",
+      "title": "Inverse operations and isolating a variable",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "To solve an equation, use inverse operations to isolate the variable. Addition is undone by subtraction, and subtraction is undone by addition. In x + 7 = 15, subtract 7 from both sides because the goal is to undo the +7 attached to x.",
+      "retrieval_excerpt": "Title: Inverse operations and isolating a variable\nchunk_id: ALG-LE-001\ncorpus_version: v1.0\ntopic: solving linear equations\nsubskill: inverse operations\ndifficulty: easy\nresource_type: conceptual_explanation\nmisconception_tag: wrong_inverse_operation\nsupports_tasks: LE-01, WE-01\npedagogical_use: conceptual_prompt, light_hint, misconception_correction\n\nInstructional content:\nTo solve an equation, use inverse operations to isolate the variable. Addition is undone by subtraction, and subtraction is undone by addition. In x + 7 = 15, subtract 7 from both sides because the goal is to undo the +7 attached to x.",
+      "metadata": {
+        "topic": "solving linear equations",
+        "subskill": "inverse operations",
+        "difficulty": "easy",
+        "resource_type": "conceptual_explanation",
+        "misconception_tag": "wrong_inverse_operation",
+        "supports_tasks": "LE-01,WE-01",
+        "pedagogical_use": "conceptual_prompt,light_hint,misconception_correction",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    },
+    {
+      "chunk_id": "ALG-CP-002",
+      "title": "Guiding question for solving equations",
+      "score": "not_exposed_by_gemini_file_search",
+      "content": "When solving an equation, ask: What operation is currently being done to the variable, and what inverse operation will undo it while keeping both sides balanced?",
+      "retrieval_excerpt": "Title: Guiding question for solving equations\nchunk_id: ALG-CP-002\ncorpus_version: v1.0\ntopic: short conceptual prompt\nsubskill: inverse operations\ndifficulty: easy\nresource_type: guided_question\nmisconception_tag: wrong_inverse_operation\nsupports_tasks: CP-02, LE-01, LE-02\npedagogical_use: conceptual_prompt, light_hint\n\nInstructional content:\nWhen solving an equation, ask: What operation is currently being done to the variable, and what inverse operation will undo it while keeping both sides balanced?",
+      "metadata": {
+        "topic": "short conceptual prompt",
+        "subskill": "inverse operations",
+        "difficulty": "easy",
+        "resource_type": "guided_question",
+        "misconception_tag": "wrong_inverse_operation",
+        "supports_tasks": "CP-02,LE-01,LE-02",
+        "pedagogical_use": "conceptual_prompt,light_hint",
+        "retrieval_source": "gemini_file_search",
+        "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+        "uri": null,
+        "page_number": null
+      }
+    }
+  ],
+  "created_at": "2026-05-16T07:22:24.636047+00:00",
+  "versioning": {
+    "retrieval_log_schema_version": "retrieval_log_v1.0",
+    "corpus_version": "algebra_corpus_v1.0",
+    "retrieval_metadata_version": "retrieval_metadata_v1.0"
+  },
+  "retrieval_probe": {
+    "retrieval_probe_id": "rag_retrieval_probe_ce40cb6191d542478ddff93e15809eeb",
+    "rag_file_search_service_version": "rag_file_search_service_v1.0",
+    "store_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+    "retrieval_model": "gemini-2.5-flash",
+    "retrieval_probe_prompt": "Use the File Search store to retrieve the most relevant algebra instructional evidence for the request below.\n\nYou must rely on retrieved File Search evidence for this retrieval step.\nDo not solve the tutoring task.\nAfter retrieving evidence, reply with one brief sentence only:\n\"Retrieved relevant instructional evidence.\"\n\nRetrieval request:\nRetrieve the most relevant algebra instructional evidence for this pedagogical RAG tutoring turn.\n\nTask ID: LE-03\nTurn number: 2\nAlgebra category: Solving linear equations\nTopic: solving linear equations\nSubskill: two-step equations\nOriginal student-facing task: Solve for y: 5y - 4 = 21.\nCurrent learner message: Student says: \"I got y = 17.\"\nSelected pedagogical response mode: misconception_correction\n\nPrioritize evidence that supports:\n- mathematically accurate explanation,\n- misconception correction where relevant,\n- stepwise tutoring support,\n- the selected pedagogical response mode.\n\n",
+    "retrieval_probe_response_text": "Retrieved relevant instructional evidence.",
+    "retrieved_chunk_count": 5,
+    "retrieved_chunks": [
+      {
+        "chunk_id": "ALG-WE-001",
+        "title": "Correcting the move-across misconception",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "The phrase 'move it across and change the sign' can hide the real reasoning. A better explanation is inverse operations. In 2x + 5 = 17, the +5 is undone by subtracting 5 from both sides. This gives 2x = 12, then x = 6.",
+        "retrieval_excerpt": "Title: Correcting the move-across misconception\nchunk_id: ALG-WE-001\ncorpus_version: v1.0\ntopic: worked-solution error identification\nsubskill: inverse operations and balance principle\ndifficulty: medium\nresource_type: misconception_note\nmisconception_tag: move_across_sign_error\nsupports_tasks: WE-01\npedagogical_use: misconception_correction, worked_step_explanation\n\nInstructional content:\nThe phrase 'move it across and change the sign' can hide the real reasoning. A better explanation is inverse operations. In 2x + 5 = 17, the +5 is undone by subtracting 5 from both sides. This gives 2x = 12, then x = 6.",
+        "metadata": {
+          "topic": "worked-solution error identification",
+          "subskill": "inverse operations and balance principle",
+          "difficulty": "medium",
+          "resource_type": "misconception_note",
+          "misconception_tag": "move_across_sign_error",
+          "supports_tasks": "WE-01",
+          "pedagogical_use": "misconception_correction,worked_step_explanation",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      },
+      {
+        "chunk_id": "ALG-LE-004",
+        "title": "Why not divide too early in a two-step equation",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "A common mistake in 2x + 3 = 11 is dividing 11 by 2 before handling the +3. The expression on the left is not only 2x; it is 2x + 3. First undo the +3, then divide by 2.",
+        "retrieval_excerpt": "Title: Why not divide too early in a two-step equation\nchunk_id: ALG-LE-004\ncorpus_version: v1.0\ntopic: solving linear equations\nsubskill: two-step equations\ndifficulty: medium\nresource_type: misconception_note\nmisconception_tag: incorrect_order_of_inverse_operations\nsupports_tasks: LE-02\npedagogical_use: misconception_correction\n\nInstructional content:\nA common mistake in 2x + 3 = 11 is dividing 11 by 2 before handling the +3. The expression on the left is not only 2x; it is 2x + 3. First undo the +3, then divide by 2.",
+        "metadata": {
+          "topic": "solving linear equations",
+          "subskill": "two-step equations",
+          "difficulty": "medium",
+          "resource_type": "misconception_note",
+          "misconception_tag": "incorrect_order_of_inverse_operations",
+          "supports_tasks": "LE-02",
+          "pedagogical_use": "misconception_correction",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      },
+      {
+        "chunk_id": "ALG-LE-003",
+        "title": "Solving two-step equations",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "For a two-step equation such as 2x + 3 = 11, first undo addition or subtraction, then undo multiplication or division. Subtract 3 from both sides to get 2x = 8. Then divide both sides by 2 to get x = 4.",
+        "retrieval_excerpt": "Title: Solving two-step equations\nchunk_id: ALG-LE-003\ncorpus_version: v1.0\ntopic: solving linear equations\nsubskill: two-step equations\ndifficulty: medium\nresource_type: worked_example\nmisconception_tag: incorrect_order_of_inverse_operations\nsupports_tasks: LE-02, LE-03\npedagogical_use: procedural_hint, worked_step_explanation\n\nInstructional content:\nFor a two-step equation such as 2x + 3 = 11, first undo addition or subtraction, then undo multiplication or division. Subtract 3 from both sides to get 2x = 8. Then divide both sides by 2 to get x = 4.",
+        "metadata": {
+          "topic": "solving linear equations",
+          "subskill": "two-step equations",
+          "difficulty": "medium",
+          "resource_type": "worked_example",
+          "misconception_tag": "incorrect_order_of_inverse_operations",
+          "supports_tasks": "LE-02,LE-03",
+          "pedagogical_use": "procedural_hint,worked_step_explanation",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      },
+      {
+        "chunk_id": "ALG-LE-001",
+        "title": "Inverse operations and isolating a variable",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "To solve an equation, use inverse operations to isolate the variable. Addition is undone by subtraction, and subtraction is undone by addition. In x + 7 = 15, subtract 7 from both sides because the goal is to undo the +7 attached to x.",
+        "retrieval_excerpt": "Title: Inverse operations and isolating a variable\nchunk_id: ALG-LE-001\ncorpus_version: v1.0\ntopic: solving linear equations\nsubskill: inverse operations\ndifficulty: easy\nresource_type: conceptual_explanation\nmisconception_tag: wrong_inverse_operation\nsupports_tasks: LE-01, WE-01\npedagogical_use: conceptual_prompt, light_hint, misconception_correction\n\nInstructional content:\nTo solve an equation, use inverse operations to isolate the variable. Addition is undone by subtraction, and subtraction is undone by addition. In x + 7 = 15, subtract 7 from both sides because the goal is to undo the +7 attached to x.",
+        "metadata": {
+          "topic": "solving linear equations",
+          "subskill": "inverse operations",
+          "difficulty": "easy",
+          "resource_type": "conceptual_explanation",
+          "misconception_tag": "wrong_inverse_operation",
+          "supports_tasks": "LE-01,WE-01",
+          "pedagogical_use": "conceptual_prompt,light_hint,misconception_correction",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      },
+      {
+        "chunk_id": "ALG-CP-002",
+        "title": "Guiding question for solving equations",
+        "score": "not_exposed_by_gemini_file_search",
+        "content": "When solving an equation, ask: What operation is currently being done to the variable, and what inverse operation will undo it while keeping both sides balanced?",
+        "retrieval_excerpt": "Title: Guiding question for solving equations\nchunk_id: ALG-CP-002\ncorpus_version: v1.0\ntopic: short conceptual prompt\nsubskill: inverse operations\ndifficulty: easy\nresource_type: guided_question\nmisconception_tag: wrong_inverse_operation\nsupports_tasks: CP-02, LE-01, LE-02\npedagogical_use: conceptual_prompt, light_hint\n\nInstructional content:\nWhen solving an equation, ask: What operation is currently being done to the variable, and what inverse operation will undo it while keeping both sides balanced?",
+        "metadata": {
+          "topic": "short conceptual prompt",
+          "subskill": "inverse operations",
+          "difficulty": "easy",
+          "resource_type": "guided_question",
+          "misconception_tag": "wrong_inverse_operation",
+          "supports_tasks": "CP-02,LE-01,LE-02",
+          "pedagogical_use": "conceptual_prompt,light_hint",
+          "retrieval_source": "gemini_file_search",
+          "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
+          "uri": null,
+          "page_number": null
+        }
+      }
+    ],
+    "retrieval_attempts": [
+      {
+        "attempt_number": 1,
+        "response_text": "Retrieved relevant instructional evidence.",
+        "retrieved_chunk_count": 5,
+        "grounding_chunks_found": true
+      }
+    ],
+    "created_at": "2026-05-16T07:22:24.634258+00:00"
+  }
+}

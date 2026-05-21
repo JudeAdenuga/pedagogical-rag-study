@@ -1,5 +1,5 @@
 {
-  "retrieval_log_id": "retrieval_ff35c1bbda004938b450541c09886b4a",
+  "retrieval_log_id": "retrieval_800c6595eee14ce083b4bf04dacca791",
   "session_id": "rag_two_turn_SE-04",
   "task_id": "SE-04",
   "turn_number": 2,
@@ -49,19 +49,19 @@
       }
     },
     {
-      "chunk_id": "ALG-LE-005",
-      "title": "Distribution in equations",
+      "chunk_id": "ALG-CP-003",
+      "title": "Guiding question for distribution",
       "score": "not_exposed_by_gemini_file_search",
-      "content": "In an equation such as 3(x - 2) = 12, you may either divide both sides by 3 first or distribute first. If distributing, multiply 3 by every term inside the parentheses: 3(x - 2) becomes 3x - 6, not 3x - 2.",
-      "retrieval_excerpt": "Title: Distribution in equations\nchunk_id: ALG-LE-005\ncorpus_version: v1.0\ntopic: solving linear equations\nsubskill: distribution in equations\ndifficulty: medium\nresource_type: worked_example\nmisconception_tag: incomplete_distribution\nsupports_tasks: LE-04\npedagogical_use: procedural_hint, misconception_correction, worked_step_explanation\n\nInstructional content:\nIn an equation such as 3(x - 2) = 12, you may either divide both sides by 3 first or distribute first. If distributing, multiply 3 by every term inside the parentheses: 3(x - 2) becomes 3x - 6, not 3x - 2.",
+      "content": "When distributing, ask: What is the multiplier outside the parentheses, and did I multiply it by every term inside the parentheses, including negative terms?",
+      "retrieval_excerpt": "Title: Guiding question for distribution\nchunk_id: ALG-CP-003\ncorpus_version: v1.0\ntopic: short conceptual prompt\nsubskill: distributive property\ndifficulty: medium\nresource_type: guided_question\nmisconception_tag: incomplete_distribution\nsupports_tasks: CP-03, SE-02, SE-03, LE-04, WE-02\npedagogical_use: conceptual_prompt, light_hint, procedural_hint\n\nInstructional content:\nWhen distributing, ask: What is the multiplier outside the parentheses, and did I multiply it by every term inside the parentheses, including negative terms?",
       "metadata": {
-        "topic": "solving linear equations",
-        "subskill": "distribution in equations",
+        "topic": "short conceptual prompt",
+        "subskill": "distributive property",
         "difficulty": "medium",
-        "resource_type": "worked_example",
+        "resource_type": "guided_question",
         "misconception_tag": "incomplete_distribution",
-        "supports_tasks": "LE-04",
-        "pedagogical_use": "procedural_hint,misconception_correction,worked_step_explanation",
+        "supports_tasks": "CP-03,SE-02,SE-03,LE-04,WE-02",
+        "pedagogical_use": "conceptual_prompt,light_hint,procedural_hint",
         "retrieval_source": "gemini_file_search",
         "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
         "uri": null,
@@ -89,19 +89,19 @@
       }
     },
     {
-      "chunk_id": "ALG-CP-003",
-      "title": "Guiding question for distribution",
+      "chunk_id": "ALG-LE-005",
+      "title": "Distribution in equations",
       "score": "not_exposed_by_gemini_file_search",
-      "content": "When distributing, ask: What is the multiplier outside the parentheses, and did I multiply it by every term inside the parentheses, including negative terms?",
-      "retrieval_excerpt": "Title: Guiding question for distribution\nchunk_id: ALG-CP-003\ncorpus_version: v1.0\ntopic: short conceptual prompt\nsubskill: distributive property\ndifficulty: medium\nresource_type: guided_question\nmisconception_tag: incomplete_distribution\nsupports_tasks: CP-03, SE-02, SE-03, LE-04, WE-02\npedagogical_use: conceptual_prompt, light_hint, procedural_hint\n\nInstructional content:\nWhen distributing, ask: What is the multiplier outside the parentheses, and did I multiply it by every term inside the parentheses, including negative terms?",
+      "content": "In an equation such as 3(x - 2) = 12, you may either divide both sides by 3 first or distribute first. If distributing, multiply 3 by every term inside the parentheses: 3(x - 2) becomes 3x - 6, not 3x - 2.",
+      "retrieval_excerpt": "Title: Distribution in equations\nchunk_id: ALG-LE-005\ncorpus_version: v1.0\ntopic: solving linear equations\nsubskill: distribution in equations\ndifficulty: medium\nresource_type: worked_example\nmisconception_tag: incomplete_distribution\nsupports_tasks: LE-04\npedagogical_use: procedural_hint, misconception_correction, worked_step_explanation\n\nInstructional content:\nIn an equation such as 3(x - 2) = 12, you may either divide both sides by 3 first or distribute first. If distributing, multiply 3 by every term inside the parentheses: 3(x - 2) becomes 3x - 6, not 3x - 2.",
       "metadata": {
-        "topic": "short conceptual prompt",
-        "subskill": "distributive property",
+        "topic": "solving linear equations",
+        "subskill": "distribution in equations",
         "difficulty": "medium",
-        "resource_type": "guided_question",
+        "resource_type": "worked_example",
         "misconception_tag": "incomplete_distribution",
-        "supports_tasks": "CP-03,SE-02,SE-03,LE-04,WE-02",
-        "pedagogical_use": "conceptual_prompt,light_hint,procedural_hint",
+        "supports_tasks": "LE-04",
+        "pedagogical_use": "procedural_hint,misconception_correction,worked_step_explanation",
         "retrieval_source": "gemini_file_search",
         "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
         "uri": null,
@@ -109,14 +109,14 @@
       }
     }
   ],
-  "created_at": "2026-05-16T02:06:01.453278+00:00",
+  "created_at": "2026-05-16T07:02:17.524580+00:00",
   "versioning": {
     "retrieval_log_schema_version": "retrieval_log_v1.0",
     "corpus_version": "algebra_corpus_v1.0",
     "retrieval_metadata_version": "retrieval_metadata_v1.0"
   },
   "retrieval_probe": {
-    "retrieval_probe_id": "rag_retrieval_probe_13cb1ad8009641399cf6732172199013",
+    "retrieval_probe_id": "rag_retrieval_probe_7a7d1863ee1a4482887a1e0bd473c666",
     "rag_file_search_service_version": "rag_file_search_service_v1.0",
     "store_name": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
     "retrieval_model": "gemini-2.5-flash",
@@ -165,19 +165,19 @@
         }
       },
       {
-        "chunk_id": "ALG-LE-005",
-        "title": "Distribution in equations",
+        "chunk_id": "ALG-CP-003",
+        "title": "Guiding question for distribution",
         "score": "not_exposed_by_gemini_file_search",
-        "content": "In an equation such as 3(x - 2) = 12, you may either divide both sides by 3 first or distribute first. If distributing, multiply 3 by every term inside the parentheses: 3(x - 2) becomes 3x - 6, not 3x - 2.",
-        "retrieval_excerpt": "Title: Distribution in equations\nchunk_id: ALG-LE-005\ncorpus_version: v1.0\ntopic: solving linear equations\nsubskill: distribution in equations\ndifficulty: medium\nresource_type: worked_example\nmisconception_tag: incomplete_distribution\nsupports_tasks: LE-04\npedagogical_use: procedural_hint, misconception_correction, worked_step_explanation\n\nInstructional content:\nIn an equation such as 3(x - 2) = 12, you may either divide both sides by 3 first or distribute first. If distributing, multiply 3 by every term inside the parentheses: 3(x - 2) becomes 3x - 6, not 3x - 2.",
+        "content": "When distributing, ask: What is the multiplier outside the parentheses, and did I multiply it by every term inside the parentheses, including negative terms?",
+        "retrieval_excerpt": "Title: Guiding question for distribution\nchunk_id: ALG-CP-003\ncorpus_version: v1.0\ntopic: short conceptual prompt\nsubskill: distributive property\ndifficulty: medium\nresource_type: guided_question\nmisconception_tag: incomplete_distribution\nsupports_tasks: CP-03, SE-02, SE-03, LE-04, WE-02\npedagogical_use: conceptual_prompt, light_hint, procedural_hint\n\nInstructional content:\nWhen distributing, ask: What is the multiplier outside the parentheses, and did I multiply it by every term inside the parentheses, including negative terms?",
         "metadata": {
-          "topic": "solving linear equations",
-          "subskill": "distribution in equations",
+          "topic": "short conceptual prompt",
+          "subskill": "distributive property",
           "difficulty": "medium",
-          "resource_type": "worked_example",
+          "resource_type": "guided_question",
           "misconception_tag": "incomplete_distribution",
-          "supports_tasks": "LE-04",
-          "pedagogical_use": "procedural_hint,misconception_correction,worked_step_explanation",
+          "supports_tasks": "CP-03,SE-02,SE-03,LE-04,WE-02",
+          "pedagogical_use": "conceptual_prompt,light_hint,procedural_hint",
           "retrieval_source": "gemini_file_search",
           "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
           "uri": null,
@@ -205,19 +205,19 @@
         }
       },
       {
-        "chunk_id": "ALG-CP-003",
-        "title": "Guiding question for distribution",
+        "chunk_id": "ALG-LE-005",
+        "title": "Distribution in equations",
         "score": "not_exposed_by_gemini_file_search",
-        "content": "When distributing, ask: What is the multiplier outside the parentheses, and did I multiply it by every term inside the parentheses, including negative terms?",
-        "retrieval_excerpt": "Title: Guiding question for distribution\nchunk_id: ALG-CP-003\ncorpus_version: v1.0\ntopic: short conceptual prompt\nsubskill: distributive property\ndifficulty: medium\nresource_type: guided_question\nmisconception_tag: incomplete_distribution\nsupports_tasks: CP-03, SE-02, SE-03, LE-04, WE-02\npedagogical_use: conceptual_prompt, light_hint, procedural_hint\n\nInstructional content:\nWhen distributing, ask: What is the multiplier outside the parentheses, and did I multiply it by every term inside the parentheses, including negative terms?",
+        "content": "In an equation such as 3(x - 2) = 12, you may either divide both sides by 3 first or distribute first. If distributing, multiply 3 by every term inside the parentheses: 3(x - 2) becomes 3x - 6, not 3x - 2.",
+        "retrieval_excerpt": "Title: Distribution in equations\nchunk_id: ALG-LE-005\ncorpus_version: v1.0\ntopic: solving linear equations\nsubskill: distribution in equations\ndifficulty: medium\nresource_type: worked_example\nmisconception_tag: incomplete_distribution\nsupports_tasks: LE-04\npedagogical_use: procedural_hint, misconception_correction, worked_step_explanation\n\nInstructional content:\nIn an equation such as 3(x - 2) = 12, you may either divide both sides by 3 first or distribute first. If distributing, multiply 3 by every term inside the parentheses: 3(x - 2) becomes 3x - 6, not 3x - 2.",
         "metadata": {
-          "topic": "short conceptual prompt",
-          "subskill": "distributive property",
+          "topic": "solving linear equations",
+          "subskill": "distribution in equations",
           "difficulty": "medium",
-          "resource_type": "guided_question",
+          "resource_type": "worked_example",
           "misconception_tag": "incomplete_distribution",
-          "supports_tasks": "CP-03,SE-02,SE-03,LE-04,WE-02",
-          "pedagogical_use": "conceptual_prompt,light_hint,procedural_hint",
+          "supports_tasks": "LE-04",
+          "pedagogical_use": "procedural_hint,misconception_correction,worked_step_explanation",
           "retrieval_source": "gemini_file_search",
           "file_search_store": "fileSearchStores/pedagogicalragalgebracorpus-fq8gc6l7rfit",
           "uri": null,
@@ -233,6 +233,6 @@
         "grounding_chunks_found": true
       }
     ],
-    "created_at": "2026-05-16T02:06:01.451640+00:00"
+    "created_at": "2026-05-16T07:02:17.522324+00:00"
   }
 }
