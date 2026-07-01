@@ -300,8 +300,11 @@ These materials support the technical workflow and the accompanying scholarly ma
 ## Author
 
 **Jude A. Adenuga**  
-Educational Technology and Instructional Design  
-Research focus: educational AI, retrieval-augmented generation, learner-state-aware tutoring systems, and pedagogically grounded LLM applications.
+Ph.D. student in Artificial Intelligence  
+University of the Cumberlands  
+Email: aadenuga58635@ucumberlands.edu  
+
+Research focus: educational AI, retrieval-augmented generation, learner-state-aware tutoring systems, LLM memory management, KV-cache frameworks, inference engineering, and equitable AI infrastructure design for education, healthcare, assisted living, and underserved communities.
 
 ---
 
