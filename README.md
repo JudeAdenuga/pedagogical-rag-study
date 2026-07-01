@@ -1,54 +1,114 @@
 # Pedagogical RAG Study
 
 ## Retrieval-Augmented Generation for Pedagogically Aware Educational AI  
-### A Comparison of a Baseline LLM Tutor and a Learner-State-Aware Pedagogical RAG Tutor
+### An Expert-Rated Comparison of a Prompt-Only LLM Tutor and an Integrated Learner-State-Aware RAG Tutor
 
-This repository contains the implementation and evaluation materials for a controlled educational AI study examining whether retrieval-augmented generation, learner-state tracking, and bounded pedagogical response policies can improve the instructional quality of large language model tutoring in algebra.
+This repository contains implementation and evaluation materials for a controlled educational AI study in algebra tutoring.
 
 The study compares two instructional conditions:
 
-1. **Baseline LLM Tutor**  
-   A fixed, prompt-only, stateless tutoring condition implemented with `gemini-2.5-flash`.
+1. **Prompt-Only LLM Tutor**  
+   A fixed, stateless tutoring condition implemented with `gemini-2.5-flash`.
 
-2. **Pedagogical RAG Tutor**  
-   A learner-state-aware tutoring condition implemented with the same `gemini-2.5-flash` foundation model, augmented with:
+2. **Integrated Learner-State-Aware RAG Tutor**  
+   A tutoring condition implemented with the same `gemini-2.5-flash` foundation model, augmented with:
    - curriculum-grounded retrieval,
    - structured learner-state tracking,
    - deterministic pedagogical response-control logic, and
    - scaffolded tutoring modes such as guided questioning, adaptive hinting, misconception correction, and worked-step support.
 
-By holding the foundation model constant across both instructional conditions, the study is designed to reduce model-family confounding and more directly examine the contribution of retrieval-grounded pedagogical augmentation.
+The foundation model is held constant across both conditions. This allows the study to examine output differences associated with the integrated pedagogical augmentation layer.
+
+This repository is intended for research inspection and reproducibility. It is not a public tutoring product.
+
+---
+
+## Installation
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/JudeAdenuga/pedagogical-rag-study.git
+   cd pedagogical-rag-study
+   ```
+
+2. Create and activate a Python virtual environment:
+
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
+
+   On Windows:
+
+   ```bash
+   python -m venv .venv
+   .venv\Scripts\activate
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Configure environment variables.
+
+   Create a `.env` file in the repository root using `.env.example` as a guide.
+
+   Example:
+
+   ```env
+   GEMINI_API_KEY=your_api_key_here
+   MODEL_NAME=gemini-2.5-flash
+   ```
+
+   Do not commit real API keys or private credentials to the repository.
+
+---
+
+## How to Use
+
+This repository supports the controlled comparison reported in the manuscript.
+
+1. Review the benchmark task materials in `manuscript_artifacts/`.
+2. Review the baseline and pedagogical RAG prompt templates.
+3. Configure the required environment variables using `.env.example`.
+4. Run the prompt-only baseline workflow to generate baseline tutor outputs.
+5. Run the pedagogical RAG workflow to generate retrieval-grounded, learner-state-aware outputs.
+6. Export the logged outputs for expert scoring and analysis.
+7. Compare the outputs using the rubric and analysis materials provided with the study artifacts.
+
+The workflow is designed for research replication and inspection. It should not be used as a live student-facing tutoring system without additional safety testing, output filtering, and classroom validation.
 
 ---
 
 ## Research Purpose
 
-Large language models can generate fluent tutoring responses, but fluency alone does not guarantee reliable educational support. In mathematics tutoring, especially across multi-turn interactions, a useful system must do more than produce a correct answer. It should maintain instructional continuity, respond to the learner’s apparent state of understanding, provide appropriately calibrated help, and reduce unsupported or pedagogically weak explanations.
+Large language models can generate fluent tutoring responses, but fluency alone does not guarantee reliable educational support. In mathematics tutoring, a useful system must do more than produce a correct answer. It should maintain instructional continuity, respond to the learner’s apparent state of understanding, provide appropriately calibrated help, and avoid unsupported or misleading explanations.
 
-This project investigates whether a pedagogically structured RAG tutor can provide stronger educational support than a prompt-only baseline LLM tutor under controlled conditions.
+This project examines whether an integrated learner-state-aware RAG tutor produces stronger expert-rated tutoring responses than a prompt-only LLM tutor under controlled conditions.
 
-The broader aim is not to position AI as a replacement for teachers, but to explore how educational AI systems may be designed more responsibly as instructional support tools grounded in curriculum evidence and pedagogical reasoning.
+The study does not claim to measure student learning gains. No live classroom deployment was conducted in the present phase. The current work focuses on system implementation, transcript generation, and expert evaluation of tutor responses.
 
 ---
 
 ## Study Design
 
-### Overall Design
-
-The study uses a **two-condition comparative evaluation** in the domain of algebra tutoring:
+The study uses a two-condition comparative evaluation in the domain of algebra tutoring.
 
 | Condition | Description |
 |---|---|
-| **Baseline LLM Tutor** | `gemini-2.5-flash` used in a fixed prompt-only, stateless configuration with no retrieval, no external instructional evidence, and no learner-state memory. |
-| **Pedagogical RAG Tutor** | `gemini-2.5-flash` augmented with retrieved instructional evidence, learner-state variables, and bounded pedagogical policy logic that guides the style and level of tutoring support. |
+| **Prompt-Only LLM Tutor** | `gemini-2.5-flash` used in a fixed, stateless prompt-only configuration with no retrieval, no external instructional evidence, and no learner-state memory. |
+| **Integrated Learner-State-Aware RAG Tutor** | `gemini-2.5-flash` used with retrieved instructional evidence, learner-state variables, and bounded pedagogical policy logic that guides the style and level of tutoring support. |
 
-Both conditions are evaluated on the same benchmark tasks and interaction scenarios so that differences in output quality can be attributed as directly as possible to the pedagogical augmentation layer rather than to differences in the underlying language model.
+Both conditions are evaluated on the same benchmark tasks and interaction scenarios. This allows output quality to be examined while holding the foundation model constant.
 
 ---
 
-## Instructional Condition 1: Baseline LLM Tutor
+## Instructional Condition 1: Prompt-Only LLM Tutor
 
-The baseline tutor serves as the study’s comparison condition. It is intentionally designed as a **clean, prompt-only evaluation harness**, rather than as a production tutoring application.
+The prompt-only tutor serves as the study’s comparison condition. It is designed as a clean evaluation harness rather than as a production tutoring application.
 
 ### Baseline Characteristics
 
@@ -61,57 +121,54 @@ The baseline tutor serves as the study’s comparison condition. It is intention
 - No pedagogical policy engine
 - No external grounding or evidence injection
 
-The baseline is included to represent a common form of LLM tutoring support: a capable general-purpose model responding directly to student-facing algebra prompts without structured educational augmentation.
+The baseline represents a common form of LLM tutoring support: a capable general-purpose model responding directly to algebra prompts without structured educational augmentation.
 
 ---
 
-## Instructional Condition 2: Pedagogical RAG Tutor
+## Instructional Condition 2: Integrated Learner-State-Aware RAG Tutor
 
-The pedagogical RAG tutor uses the same underlying model, `gemini-2.5-flash`, but adds three core layers of educational control:
+The pedagogical RAG tutor uses the same underlying model, `gemini-2.5-flash`, but adds three layers of instructional control.
 
-1. **Curriculum-Grounded Retrieval**  
-   Relevant instructional evidence is retrieved from a curated algebra corpus designed to support concept explanations, worked examples, misconception handling, and stepwise problem solving.
+### 1. Curriculum-Grounded Retrieval
 
-2. **Learner-State Tracking**  
-   The system maintains structured interaction variables outside the model, including information such as:
-   - problem identifier,
-   - algebra topic and subskill,
-   - recent learner attempt,
-   - detected error type,
-   - number of hints already provided,
-   - current support level,
-   - rolling interaction summary, and
-   - last pedagogical response mode.
+Relevant instructional evidence is retrieved from a curated algebra corpus. The corpus supports concept explanations, worked examples, misconception handling, and stepwise problem solving.
 
-3. **Pedagogical Policy Logic**  
-   A deterministic policy layer selects an appropriate tutoring mode based on the learner state and task context. These bounded response modes include:
-   - conceptual prompt,
-   - light hint,
-   - procedural hint,
-   - misconception correction,
-   - worked-step explanation, and
-   - full solution when warranted.
+### 2. Learner-State Tracking
 
-### Purpose of the Pedagogical RAG Condition
+The system maintains structured interaction variables outside the model, including:
 
-The RAG condition is designed to test whether an LLM tutor becomes more instructionally effective when it is:
-- grounded in task-relevant educational evidence,
-- informed by the ongoing learner interaction,
-- and constrained by explicit pedagogical response rules rather than relying only on unconstrained generative behavior.
+- problem identifier,
+- algebra topic and subskill,
+- recent learner attempt,
+- detected error type,
+- number of hints already provided,
+- current support level,
+- rolling interaction summary, and
+- last pedagogical response mode.
+
+### 3. Pedagogical Policy Logic
+
+A deterministic policy layer selects a tutoring mode based on the learner state and task context. The bounded response modes include:
+
+- conceptual prompt,
+- light hint,
+- procedural hint,
+- misconception correction,
+- worked-step explanation, and
+- full solution when warranted.
 
 ---
 
 ## Evaluation Domain
 
-The study focuses on **algebra tutoring** because algebra provides a useful testbed for evaluating both:
-- procedural correctness, and
-- pedagogical quality across multi-turn instructional interactions.
+The study focuses on algebra tutoring because algebra allows both procedural correctness and instructional quality to be examined.
 
-The benchmark includes **24 algebra tasks** distributed across several instructional categories, including:
+The benchmark includes 24 algebra tasks across these categories:
+
 - simplifying expressions,
 - solving linear equations,
 - substitution,
-- error identification,
+- worked-solution error identification,
 - symbolic relationship reasoning, and
 - conceptual algebra prompts.
 
@@ -121,17 +178,17 @@ These tasks are used to generate matched interactions across both tutoring condi
 
 ## Evaluation Approach
 
-The study evaluates system outputs using a structured expert-review framework rather than live student deployment in the current phase.
+The study evaluates system outputs through structured expert review rather than live student deployment.
 
 ### Primary Evaluation Dimensions
 
-Outputs are assessed across several dimensions:
+Outputs are assessed across five dimensions:
 
 - **Solution Accuracy**  
   Whether the mathematical response is correct.
 
 - **Conceptual Support**  
-  Whether the tutor helps the learner understand the underlying idea rather than only giving an answer.
+  Whether the tutor explains the underlying idea rather than only giving an answer.
 
 - **Instructional Quality**  
   Whether the response is clear, appropriately scaffolded, and pedagogically useful.
@@ -145,42 +202,43 @@ Outputs are assessed across several dimensions:
 ### Evaluation Structure
 
 The project uses:
+
 - a controlled task bank,
 - matched prompt scenarios across both conditions,
-- multi-turn tutoring episodes,
+- two-turn tutoring episodes,
 - structured output logging,
 - rubric-based expert scoring, and
-- comparison of baseline versus pedagogical RAG responses.
+- comparison of prompt-only and pedagogical RAG responses.
 
-No human-subject classroom trial is conducted in the present phase. The study is currently focused on implementation, transcript generation, and expert evaluation of system behavior.
+No human-subject classroom trial is conducted in the present phase.
 
 ---
 
 ## System Logic
 
-At a high level, the pedagogical RAG tutoring pipeline follows this sequence:
+At a high level, the integrated learner-state-aware RAG tutoring pipeline follows this sequence:
 
-1. Receive learner task or conversational turn  
-2. Parse the task context and recent interaction state  
-3. Retrieve curriculum-relevant instructional evidence  
-4. Update learner-state variables  
-5. Select a pedagogical response mode using deterministic policy rules  
-6. Construct the tutoring prompt  
-7. Generate the response using `gemini-2.5-flash`  
-8. Log the episode for later analysis and evaluation
+1. Receive learner task or conversational turn.
+2. Parse the task context and recent interaction state.
+3. Retrieve curriculum-relevant instructional evidence.
+4. Update learner-state variables.
+5. Select a pedagogical response mode using deterministic policy rules.
+6. Construct the tutoring prompt.
+7. Generate the response using `gemini-2.5-flash`.
+8. Log the episode for analysis and evaluation.
 
-The baseline system uses a reduced pipeline:
+The prompt-only baseline uses a reduced pipeline:
 
-1. Receive learner task or conversational turn  
-2. Construct the fixed baseline tutoring prompt  
-3. Generate the response using `gemini-2.5-flash`  
-4. Log the episode for later comparison
+1. Receive learner task or conversational turn.
+2. Construct the fixed baseline tutoring prompt.
+3. Generate the response using `gemini-2.5-flash`.
+4. Log the episode for comparison.
 
 ---
 
 ## Repository Scope
 
-This repository is intended to support the full study workflow, including:
+This repository supports the study workflow, including:
 
 - benchmark task management,
 - baseline tutoring prompt construction,
@@ -196,24 +254,25 @@ This repository is intended to support the full study workflow, including:
 
 ## Study Contribution
 
-This project contributes to educational AI development by examining a specific design question:
+This project examines a focused design question:
 
-> Does a learner-state-aware, retrieval-grounded tutoring system provide stronger pedagogical support than a prompt-only LLM tutor when the underlying foundation model is held constant?
+> Does an integrated learner-state-aware, retrieval-grounded tutoring system receive stronger expert ratings than a prompt-only LLM tutor when the foundation model is held constant?
 
 The study is positioned at the intersection of:
+
 - retrieval-augmented generation,
 - intelligent tutoring systems,
 - pedagogically aware AI design,
-- learner-state modeling,
-- and responsible educational applications of large language models.
+- learner-state modeling, and
+- responsible educational applications of large language models.
 
-Rather than treating tutoring quality as a matter of response fluency alone, the project evaluates whether instructional systems can be designed to better support reasoning, conceptual development, and calibrated assistance.
+The contribution is an early architecture and expert-evaluation study. It does not claim to prove classroom effectiveness or student learning gains.
 
 ---
 
 ## Current Project Phase
 
-The project is currently in the implementation and evaluation phase. Core study materials include:
+The project is in the implementation and evaluation phase. Core study materials include:
 
 - the 24-task algebra benchmark,
 - baseline prompt specification,
@@ -221,10 +280,20 @@ The project is currently in the implementation and evaluation phase. Core study 
 - learner-state schema,
 - pedagogical policy rules,
 - retrieval corpus samples,
-- structured scoring rubric,
-- and output logs for matched baseline versus pedagogical RAG comparisons.
+- structured scoring rubric, and
+- output logs for matched prompt-only versus pedagogical RAG comparisons.
 
-These materials support both the technical build and the accompanying scholarly manuscript.
+These materials support the technical workflow and the accompanying scholarly manuscript.
+
+---
+
+## Repository Notes
+
+- The repository is intended for research reproducibility.
+- The system is not a deployed educational product.
+- The included outputs are for controlled evaluation only.
+- Real API keys and private credentials should not be committed.
+- Student-facing deployment would require additional safety review, content filtering, and classroom validation.
 
 ---
 
@@ -236,6 +305,6 @@ Research focus: educational AI, retrieval-augmented generation, learner-state-aw
 
 ---
 
-## Project Title for Manuscript
+## Manuscript Title
 
-**Retrieval-Augmented Generation for Pedagogically Aware Educational AI: A Comparison of a Baseline LLM Tutor and a Learner-State-Aware RAG Tutor**
+**Retrieval-Augmented Generation for Pedagogically Aware Educational AI: An Expert-Rated Comparison of a Prompt-Only LLM Tutor and an Integrated Learner-State-Aware RAG Tutor**
